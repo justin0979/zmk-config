@@ -23,12 +23,12 @@
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
    &kp ESC  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
    &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW  &kp DARW  &kp UARW  &kp RARW  &trans    &trans
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
-                                      &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
+                                      &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
                 };
 
@@ -37,12 +37,12 @@
 // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
    &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
    &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
-                                      &kp LGUI &trans &kp SPC   &kp RET &trans &kp RALT
+                                      &mo 2 &trans &kp SHFT   &kp RET &trans &mo 1
                         >;
                 };
         };
