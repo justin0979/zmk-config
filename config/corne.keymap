@@ -9,24 +9,24 @@
 // -----------------------------------------------------------------------------------------
 // |  ` |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  | BKSP |
 // | CTRL |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '   |
-// | TAB |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | SHFT |
+// | TAB |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | ALT |
 //                    | raise_layer | BKSP | SHFT |   | ENT | SPC  | lower_layer |
                         bindings = <
    &kp GRAV  &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U    &kp P   &kp SCLN    &kp BKSP
    &kp LCTL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E    &kp O   &kp I &kp QUOT
-   &kp TAB &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp CMMA &kp DOT &kp FSLH &kp RSFT
+   &kp TAB &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp CMMA &kp DOT &kp FSLH &kp RALT
                    &mo 2 &kp BKSP &kp LSFT   &kp RET &kp SPC &mo 1
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
+// | CTRL |     |     |     |     |     |   | "|" |  -  |  =  |  [  |  ]  |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
    &kp ESC  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
-   &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW  &kp DARW  &kp UARW  &kp RARW  &trans    &trans
+   &kp LCTL &trans    &trans    &trans    &trans    & PIPE      & MINUS  &kp EQL  &kp LBKT  &kp RBKT  &trans    &trans
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
@@ -35,16 +35,17 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
+// | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
    &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
-   &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
-   &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
+   &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW &kp DARW  &kp UARW &kp RARW &kp trans &kp trans
+   &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp trans &kp trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
                 };
         };
 };
 
+// &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW  &kp DARW  &kp UARW  &kp RARW  &trans    &trans
