@@ -28,7 +28,7 @@
                         bindings = <
    &kp ESC  &kp NUM_1     &kp NUM_2     &kp NUM_3     &kp NUM_4     &kp NUM_5   &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
    &kp LCTL &trans        &trans        &trans        &trans        &trans      &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
-   &trans   &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL    &trans      &trans      &trans     &trans    &trans    &trans    &trans
+   &kp LSFT &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL    &trans      &trans      &trans     &trans    &trans    &trans    &trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
                 };
@@ -36,12 +36,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |  4  |  2  |  8  |  6  |     |   | LFT | DWN |  UP | RGT |     |      |
+// | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
-   &kp  ESC &kp BANG    &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
-   &kp LCTL &kp 5C    &kp 5A    &kp 60    &kp 5E    &trans      &kp LARW &kp DARW  &kp UARW &kp RARW &trans &trans
+   &kp  ESC &kp 1E  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
+   &kp LCTL &kp 5C    &trans    &trans    &trans    &trans      &kp LARW &kp DARW  &kp UARW &kp RARW &trans &trans
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &trans &trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
