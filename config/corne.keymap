@@ -29,7 +29,7 @@
    &kp ESC  &kp NUM_1     &kp NUM_2     &kp NUM_3     &kp NUM_4     &kp NUM_5   &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
    &kp LCTL &trans        &trans        &trans        &trans        &trans      &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
    &kp LSFT &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL    &trans      &trans      &trans     &trans    &trans    &trans    &trans
-                                      &mo 2 &trans &trans    &kp RET &trans &mo 1
+                                      &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
                 };
 
