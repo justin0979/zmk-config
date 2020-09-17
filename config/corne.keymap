@@ -41,7 +41,7 @@
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
    &kp  ESC &kp 1E  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp BKSP
-   &kp LCTL &kp 5C    &trans    &trans    &trans    &trans      &kp LARW &kp DARW  &kp UARW &kp RARW &trans &trans
+   &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW &kp DARW  &kp UARW &kp RARW &trans &trans
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &trans &trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
