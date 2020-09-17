@@ -27,7 +27,7 @@
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
    &kp ESC  &kp NUM_1     &kp NUM_2     &kp NUM_3     &kp NUM_4     &kp NUM_5   &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
-   &kp LCTL &trans        &trans        &trans        &trans        &trans      &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
+   &kp LCTL &bt BT_CLR    &trans        &trans        &trans        &trans      &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
    &trans &trans    &trans    &trans    &trans    &trans      &trans      &trans     &trans    &trans    &trans    &trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
@@ -40,7 +40,7 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
-   &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp 55 &kp LPRN &kp RPRN &kp BKSP
+   &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp 56 &kp LPRN &kp RPRN &kp BKSP
    &kp LCTL &trans    &trans    &trans    &trans    &trans      &kp LARW &kp DARW  &kp UARW &kp RARW &trans &trans
    &kp LSFT &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &trans &trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
