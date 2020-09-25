@@ -8,26 +8,26 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |   `  |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  | BT2 |
+// |   `  |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  | DEL |
 // | CTRL |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '   |
 // | TAB  |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | ALT |
 //                    | raise_layer | BKSP | SHFT |   | ENT | SPC  | lower_layer |
                         bindings = <
-   &kp GRAV  &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U    &kp P   &kp SCLN    &bt BT_SEL 2
-   &kp LCTL  &kp 4 &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E    &kp O   &kp I &kp QUOT
-   &kp TAB   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp CMMA &kp DOT &kp FSLH &kp RALT
+   &kp GRAV  &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U    &kp P   &kp SCLN    &kp DEL
+   &kp LCTL  &kp 4 &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E    &kp O   &kp I       &kp QUOT
+   &kp TAB   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp CMMA &kp DOT &kp FSLH    &kp RALT
                    &mo 2 &kp BKSP &kp LSFT   &kp RET &kp SPC &mo 1
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL |     |     |     |     |     |   | "|" |  -  |  =  |  [  |  ]  |      |
+// | CTRL | NP4 | NP2 | NP8 | NP6 | NP5 |   | "|" |  -  |  =  |  [  |  ]  |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
    &kp ESC  &kp NUM_1    &kp NUM_2   &kp NUM_3 &kp NUM_4  &kp NUM_5      &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
-   &kp LCTL &kp 5C       &trans      &trans    &trans     &trans         &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
+   &kp LCTL &kp 0x5C       &kp 0x5A      &kp 0x60    &kp 0x5E     &kp 0x5D         &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
    &trans   &trans       &trans      &trans    &trans     &trans         &trans      &trans     &trans    &trans    &trans    &trans
                                      &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
                         >;
