@@ -40,7 +40,7 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |     | SHFT |   | ENT |     | lower_layer |
                         bindings = <
-   &bt BT_CLR &kp CF  &kp CE  &kp 0xCC  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp 56 &kp LPRN &kp RPRN &kp BKSP
+   &bt BT_CLR &kp CF  &kp CE  &kp CC  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp 56 &kp LPRN &kp RPRN &kp BKSP
    &kp LCTL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp LARW &kp DARW  &kp UARW &kp RARW &trans &trans
    &kp LSFT   &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &trans &trans
                                       &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
