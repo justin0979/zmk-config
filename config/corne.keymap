@@ -11,12 +11,12 @@
 // |   `  |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  | DEL |
 // | TAB  |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '  |
 // | TAB  |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | ALT |
-//                    | raise_layer | BKSP | SHFT |   | ENT | SPC  | lower_layer |
+//                    | raise_layer | BKSP | LCTL |   | ENT | SPC  | lower_layer |
                         bindings = <
    &kp GRAV  &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U    &kp P   &kp SCLN    &kp DEL
-   &kp LCTL  &kp 4 &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E    &kp O   &kp I       &kp QUOT
+   &kp TAB   &kp 4 &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E    &kp O   &kp I       &kp QUOT
    &kp TAB   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp CMMA &kp DOT &kp FSLH    &kp RALT
-                   &mo 2 &mt LSFT BKSP &kp LCTL    &mt ALT RET &mt LSFT SPC &mo 1
+                   &mo 2 &mt LSFT BKSP &kp LCTL    &mt RALT RET &mt LSFT SPC &mo 1
                         >;
                 };
                 lower_layer {
@@ -29,7 +29,7 @@
    &kp ESC  &kp NUM_1    &kp NUM_2   &kp NUM_3 &kp NUM_4  &kp NUM_5      &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &trans
    &kp LCTL &kp 0x5C       &kp 0x5A      &kp 0x60    &kp 0x5E     &kp 0x5D         &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
    &trans   &trans       &trans      &trans    &trans     &trans         &trans      &trans     &trans    &trans    &trans    &trans
-                                     &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
+                                     &mo 2 &trans &trans   &trans &trans &mo 1
                         >;
                 };
 
@@ -43,7 +43,7 @@
    &bt BT_CLR &kp 0xCF  &kp 0xCE  &kp 0xCC  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS       &kp 56         &kp LPRN       &kp RPRN &trans
    &kp LCTL   &kp 0x5C  &kp 0x5A  &kp 0x60  &kp 0x5E  &kp 0x62    &kp LARW  &kp DARW       &kp UARW       &kp RARW       &trans &trans
    &kp LSFT   &trans    &trans    &trans    &kp 0x5D  &trans      &trans    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3 &bt BT_SEL 4
-                                      &mo 2 &trans &kp LSFT   &kp RET &trans &mo 1
+                                      &mo 2 &trans &trans   &trans &trans &mo 1
                         >;
                 };
         };
