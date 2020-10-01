@@ -39,14 +39,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  | NP7 | NP8 | CP9 |  %  |                                |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// |      |     | NP4 | NP5 | NP6 | NP0 |                                | LFT | DWN |  UP | RGT |     |      |
+// | BLDR |  !  | NP7 | NP8 | CP9 |  %  |                                |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | RESET|     | NP4 | NP5 | NP6 | NP0 |                                | LFT | DWN |  UP | RGT |     |      |
 // |      |     | NP1 | NP2 | NP3 |     |                                | BTC | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
-   &kp ESC &kp BANG &kp 0x5F  &kp 0x60  &kp 0x61   &kp PRCT             &kp CRRT    &kp AMPS       &kp 0x55       &kp LPRN       &kp RPRN        &kp BKSP
-   &trans  &trans   &kp 0x5C  &kp 0x5D  &kp 0x5E   &kp 0x62             &kp LARW    &kp DARW       &kp UARW       &kp RARW       &trans          &trans
-   &trans  &trans   &kp 0x59  &kp 0x5A  &kp 0x5B   &trans               &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
+   &bootloader &kp BANG &kp 0x5F  &kp 0x60  &kp 0x61   &kp PRCT             &kp CRRT    &kp AMPS       &kp 0x55       &kp LPRN       &kp RPRN        &kp BKSP
+   &reset      &trans   &kp 0x5C  &kp 0x5D  &kp 0x5E   &kp 0x62             &kp LARW    &kp DARW       &kp UARW       &kp RARW       &trans          &trans
+   &trans      &trans   &kp 0x59  &kp 0x5A  &kp 0x5B   &trans               &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
                                              &mo 2 &trans &trans   &trans &trans &mo 1
                         >;
                 };
