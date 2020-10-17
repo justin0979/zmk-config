@@ -16,12 +16,12 @@
 // |   `   |  Q  |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  | DEL  |
 // | CLCK  |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
 // | SHFT  |  Z  |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | SHFT |
-//            | raise_layer | SHFT,BKSP | LCTL,TAB |  | ENT | SPC  | lower_layer |
+//          | raise_layer | SHFT,BKSP | LCTL,TAB |  | ALT,ENT | SPC  | lower_layer |
                         bindings = <
    &kp GRAV  &kp Q &kp D &kp R &kp W &kp B                  &kp J &kp F  &kp U    &kp P   &kp SCLN    &kp DEL
    &kp CLCK  &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E    &kp O   &kp I       &kp QUOT
    &kp LSFT  &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp CMMA &kp DOT &kp FSLH    &kp LSFT
-                 &mo 2 &mt LSFT BKSP &mt LCTL TAB    &mt RALT RET &kp SPC &mo 1
+             &mo RAISE &mt LSFT BKSP &mt LCTL TAB    &mt RALT RET &kp SPC &mo LOWER
                         >;
                 };
 
@@ -35,20 +35,20 @@
    &kp ESC      &kp NUM_1  &kp NUM_2  &kp NUM_3 &kp NUM_4  &kp NUM_5             &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
    &trans       &kp 0x5C   &kp 0x5A   &kp 0x60  &kp 0x5E   &kp 0x5D              &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
    &tog QWERTY  &trans     &trans     &trans    &trans     &trans                &trans      &trans     &trans    &trans    &trans    &trans
-                                                     &mo 2 &trans &trans  &trans &trans &mo 1
+                                                     &mo 2 &trans &trans    &trans &trans &mo 1
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  | NP7 | NP8 | CP9 |  %  |                                |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// |      |  !  | NP7 | NP8 | CP9 |  %  |                                |  ^  |  &  |  *  |  (  |  )  | BTC  |
 // | RESET|     | NP4 | NP5 | NP6 | NP0 |                                | LFT | DWN |  UP | RGT |     |      |
-// |      |     | NP1 | NP2 | NP3 |     |                                | BTC | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
+// |      |     | NP1 | NP2 | NP3 |     |                                |     | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
-   &trans      &kp BANG &kp 0x5F  &kp 0x60  &kp 0x61   &kp PRCT             &kp CRRT    &kp AMPS       &kp 0x55       &kp LPRN       &kp RPRN        &kp BKSP
+   &trans      &kp BANG &kp 0x5F  &kp 0x60  &kp 0x61   &kp PRCT             &kp CRRT    &kp AMPS       &kp 0x55       &kp LPRN       &kp RPRN        &bt BT_CLR
    &reset      &trans   &kp 0x5C  &kp 0x5D  &kp 0x5E   &kp 0x62             &kp LARW    &kp DARW       &kp UARW       &kp RARW       &trans          &trans
-   &trans      &trans   &kp 0x59  &kp 0x5A  &kp 0x5B   &trans               &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
+   &trans      &trans   &kp 0x59  &kp 0x5A  &kp 0x5B   &trans               &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
                                              &mo 2 &trans &trans   &trans &trans &mo 1
                         >;
                 };
