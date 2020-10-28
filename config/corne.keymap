@@ -14,14 +14,14 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |   `   |  Q  |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  | DEL  |
-// | CLCK  |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
+// | TAB   |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
 // | SHFT  |  Z  |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | SHFT |
 //          | raise_layer | SHFT,BKSP | LCTL,TAB |  | ALT,ENT | SPC  | lower_layer |
                         bindings = <
    &kp GRAV  &kp Q &kp D &kp R &kp W &kp B                  &kp J &kp F  &kp U    &kp P   &kp SCLN    &kp DEL
-   &kp CLCK  &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E    &kp O   &kp I       &kp QUOT
+   &kp TAB   &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E    &kp O   &kp I       &kp QUOT
    &kp LSFT  &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp CMMA &kp DOT &kp FSLH    &kp LSFT
-             &mo RAISE &mt LSFT BKSP &mt LCTL TAB    &mt RALT RET &kp SPC &mo LOWER
+             &mo RAISE &mt LSFT BKSP &kp LCTL           &mt RALT RET &kp SPC &mo LOWER
                         >;
                 };
 
