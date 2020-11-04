@@ -14,13 +14,13 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |   `   |  Q  |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  | DEL  |
-// | TAB   |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
-// | SHFT  |  Z  |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | SHFT |
+// |  TAB  |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
+// |  GUI  |  Z  |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | SHFT |
 //          | raise_layer | SHFT,BKSP | LCTL,TAB |  | ALT,ENT | SPC  | lower_layer |
                         bindings = <
-   &kp GRAV  &kp Q &kp D &kp R &kp W &kp B                  &kp J &kp F  &kp U    &kp P   &kp SCLN    &kp DEL
-   &kp TAB   &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E    &kp O   &kp I       &kp QUOT
-   &kp LSFT  &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp CMMA &kp DOT &kp FSLH    &kp LSFT
+   &kp GRAVE &kp Q &kp D &kp R &kp W &kp B                  &kp J &kp F  &kp U     &kp P   &kp SEMI    &kp DEL
+   &kp TAB   &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E     &kp O   &kp I       &kp SINGLE_QUOTE
+   &kp GUI   &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp COMMA &kp DOT &kp FSLH    &kp LSFT
           &mo RAISE &mt LSFT BKSP &mt LCTL TAB           &mt RALT RET &kp SPC &mo LOWER
                         >;
                 };
@@ -28,27 +28,27 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  | BKSP |
-// |      |     |     |     |     |     |                                       | "|" |  -  |  =  |  [  |  ]  |      |
-// | QWER |     |     |     |     |     |                                       |     |     |     |HOME | END |      |
+// |      |     |     |     |     |     |                                       | "|" |  -  |  =  |  [  |  ]  | PGUP |
+// | QWER |     |     |     |     |     |                                       |     |     |     |HOME | END | PGDN |
 //                  | raise_layer |     | SHFT |                          | ENT |     | lower_layer |
                         bindings = <
    &kp ESC      &kp NUM_1  &kp NUM_2  &kp NUM_3 &kp NUM_4  &kp NUM_5             &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
-   &trans       &trans     &trans     &trans    &trans     &trans                &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &trans
-   &tog QWERTY  &trans     &trans     &trans    &trans     &trans                &trans      &trans     &trans    &kp 0x4A  &kp 0x4D  &trans
+   &trans       &trans     &trans     &trans    &trans     &trans                &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &kp PAGE_UP
+   &tog QWERTY  &trans     &trans     &trans    &trans     &trans                &trans      &trans     &trans    &kp 0x4A  &kp 0x4D  &kp PAGE_DOWN
                                                      &mo 2 &trans &trans    &trans &trans &mo 1
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  | @   | NP8 | CP9 |  %  |                                |  ^  |  &  |  *  |  (  |  )  | BTC  |
+// |      |  !  | @   |  #  |  $  |  %  |                                |  ^  |  &  |  *  |  (  |  )  | BTC  |
 // | RESET| NP4 | NP2 | NP8 | NP6 | NP5 |                                | LFT | DWN |  UP | RGT |     |      |
-// |      |     | NP1 | NP2 | NP3 |     |                                |     | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
+// |      | F1  | F2  | F3  | NP3 |     |                                |     | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
-   &trans      &kp EXCL &kp AT    &kp 0x60  &kp 0x61   &kp PRCT             &kp CRRT    &kp AMPS       &kp 0x55       &kp LPRN       &kp RPRN        &bt BT_CLR
-   &reset      &kp 0x5C &kp 0x5A  &kp 0x60  &kp 0x5E   &kp 0x5D             &kp LARW    &kp DARW       &kp UARW       &kp RARW       &trans          &trans
-   &trans      &trans   &kp 0x59  &kp 0x5A  &kp 0x5B   &trans               &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
+   &trans      &kp EXCL &kp AT    &kp HASH  &kp DLLR   &kp PRCNT            &kp CARET   &kp AMPERSAND  &kp STAR       &kp LPAR       &kp RPAR        &bt BT_CLR
+   &reset      &kp 0x5C &kp 0x5A  &kp 0x60  &kp 0x5E   &kp 0x5D             &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT      &trans          &trans
+   &trans      &kp F1   &kp F2    &kp F3    &kp 0x5B   &trans               &trans      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
                                              &mo 2 &trans &trans   &trans &trans &mo 1
                         >;
                 };
