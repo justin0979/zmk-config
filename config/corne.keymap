@@ -16,12 +16,12 @@
 // |   `   |  Q  |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  | DEL  |
 // |  TAB  |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
 // |  GUI  |  Z  |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | SHFT |
-//          | raise_layer | SHFT,BKSP | LCTL,TAB |  | ALT,ENT | SPC  | lower_layer |
+//          | raise_layer | SHFT,BKSP | LCTRL,TAB |  | ALT,ENT | SPC  | lower_layer |
                         bindings = <
    &kp GRAVE &kp Q &kp D &kp R &kp W &kp B                  &kp J &kp F  &kp U     &kp P   &kp SEMI    &kp DEL
    &kp TAB   &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E     &kp O   &kp I       &kp SINGLE_QUOTE
-   &kp GUI   &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp COMMA &kp DOT &kp FSLH    &kp LSFT
-          &mo RAISE &mt LSFT BKSP &mt LCTL TAB           &mt RALT RET &kp SPC &mo LOWER
+   &kp LGUI   &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp COMMA &kp DOT &kp FSLH    &kp RSHFT
+          &mo RAISE &mt LSHFT BKSP &mt LCTRL TAB           &mt RALT RET &kp SPC &mo LOWER
                         >;
                 };
 
@@ -58,7 +58,7 @@
 // |   `  |  Q  |  D  |  R  |  W  |  B  |              |  J  |  F   |  U  |  P  |  ;  | DEL |
 // | TAB  |  A  |  S  |  H  |  T  |  G  |              |  Y  |  N   |  E  |  O  |  I  |  '  |
 // | tog  |  Z  |  X  |  M  |  C  |  V  |              |  K  |  L   |  ,  |  .  |  /  | ALT |
-//                 | raise_layer | BKSP | LCTL |   | ENT | SPC  | lower_layer |
+//                 | raise_layer | BKSP | LCTRL |   | ENT | SPC  | lower_layer |
                         bindings = <
    &kp GRAV      &kp Q &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I    &kp O   &kp P       &kp DEL
    &kp TAB       &kp 4 &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K    &kp L   &kp SCLN    &kp QUOT
