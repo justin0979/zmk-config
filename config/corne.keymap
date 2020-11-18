@@ -32,7 +32,7 @@
 // | QWER |     |     |     |     |     |                                       |     |     |     |     |     | PGDN |
 //                  | raise_layer |     | SHFT |                          | ENT |     | lower_layer |
                         bindings = <
-   &kp ESC      &kp NUM_1  &kp NUM_2  &kp NUM_3 &kp NUM_4  &kp NUM_5             &kp NUM_6   &kp NUM_7  &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BSPC
+   &kp ESC      &kp N1     &kp N2     &kp N3    &kp N4     &kp N5                &kp N6      &kp N7     &kp N8    &kp N9    &kp N0    &kp BSPC
    &trans       &trans     &trans     &kp 0x4A  &kp 0x4D   &trans                &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &kp PAGE_UP
    &tog QWER    &trans     &trans     &trans    &trans     &trans                &trans      &trans     &trans    &trans    &trans    &kp PAGE_DOWN
                                                      &mo 2 &trans &trans    &trans &trans &mo 1
@@ -60,9 +60,9 @@
 // | tog  |  Z  |  X  |  M  |  C  |  V  |              |  K  |  L   |  ,  |  .  |  /  | ALT |
 //                 | raise_layer | BSPC | LCTRL |   | ENT | SPACE  | lower_layer |
                         bindings = <
-   &kp GRAV      &kp Q &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I    &kp O   &kp P       &kp DEL
-   &kp TAB       &kp 4 &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K    &kp L   &kp SCLN    &kp QUOT
-   &tog QWER     &kp Z &kp X &kp C &kp V &kp B       &kp N &kp M  &kp CMMA &kp DOT &kp FSLH    &kp RALT
+   &kp GRAV      &kp Q &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I     &kp O   &kp P       &kp DEL
+   &kp TAB       &kp 4 &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K     &kp L   &kp SCLN    &kp QUOT
+   &tog QWER     &kp Z &kp X &kp C &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT &kp FSLH    &kp RALT
                             &mo 2 &trans &trans     &trans &trans &mo 1
                         >;
                 };
