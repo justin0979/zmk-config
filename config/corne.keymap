@@ -46,7 +46,7 @@
 // |      | F1  | F2  | F3  | NP3 |     |                                |     | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
-   &ESC        &kp EXCL &kp AT    &kp HASH  &kp DLLR   &kp PRCNT            &kp CARET   &kp AMPERSAND  &kp STAR       &kp LPAR       &kp RPAR        &bt BT_CLR
+   &kp ESC        &kp EXCL &kp AT    &kp HASH  &kp DLLR   &kp PRCNT            &kp CARET   &kp AMPERSAND  &kp STAR       &kp LPAR       &kp RPAR        &bt BT_CLR
    &reset      &kp 0x5C &kp 0x5A  &kp 0x60  &kp 0x5E   &kp 0x5D             &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT      &trans          &trans
    &trans      &kp F1   &kp F2    &kp F3    &kp 0x5B   &trans               &trans      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
                                              &mo 2 &trans &trans       &trans &trans &mo 1
