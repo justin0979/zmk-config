@@ -62,8 +62,8 @@
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
    &kp ESC     &kp EXCL &kp AT    &kp HASH  &kp DLLR   &kp PRCNT            &kp CARET   &kp AMPERSAND  &kp STAR       &kp LPAR       &kp RPAR        &trans
-   &trans      &kp 0x5C &kp 0x5A  &kp 0x60  &kp 0x5E   &kp 0x5D             &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT      &trans          &trans
-   &tog NAV    &kp F1   &kp F2    &kp F3    &kp 0x5B   &kp K_SCROLL_DOWN               &trans      &trans         &trans         &trans         &trans          &trans
+   &tog NAV      &kp 0x5C &kp 0x5A  &kp 0x60  &kp 0x5E   &kp 0x5D             &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT      &trans          &trans
+   &trans    &kp F1   &kp F2    &kp F3    &kp 0x5B   &kp C_AC_SCROLL_DOWN               &trans      &trans         &trans         &trans         &trans          &trans
                                              &mo 2 &trans &trans       &trans &trans &mo 1
                         >;
                 };
