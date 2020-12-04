@@ -29,13 +29,13 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | QWER |     |     |HOME | END |     |                                       |  \  |  -  |  =  |  [  |  ]  | PGUP |
-// |      |     |     |     |     |     |                                       |     |     |     |     |     | PGDN |
+// | QWER |     |     |HOME | END |     |                                       |  \  |  -  |  =  |  [  |  ]  |  UP  |
+// |      |     |     |     |     |     |                                       |     |     |     |     |     |  DWN |
 //                  | raise_layer |     | SHFT |                          | ENT |     | lower_layer |
                         bindings = <
    &kp ESC      &kp N1     &kp N2     &kp N3    &kp N4     &kp N5                &kp N6      &kp N7     &kp N8    &kp N9    &kp N0    &kp BSPC
-   &tog QWER    &trans     &trans     &kp 0x4A  &kp 0x4D   &trans                &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &kp PAGE_UP
-   &trans       &trans     &trans     &trans    &trans     &trans                &trans      &trans     &trans    &trans    &trans    &kp PAGE_DOWN
+   &tog QWER    &trans     &trans     &kp 0x4A  &kp 0x4D   &trans                &kp BSLH    &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &kp UP
+   &trans       &trans     &trans     &trans    &trans     &trans                &trans      &trans     &trans    &trans    &trans    &kp DOWN
                                                      &mo 2 &trans &trans    &trans &trans &mo 1
                         >;
                 };
