@@ -15,12 +15,12 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |   `   |  Q  |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  | DEL  |
-// |  TAB  |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
+// |  NAV  |  A  |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
 // |  GUI  |  Z  |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | SHFT |
 //          | raise_layer | SHFT,BSPC | LCTRL,TAB |  | ALT,ENT | SPACE  | lower_layer |
                         bindings = <
    &kp GRAVE &kp Q &kp D &kp R &kp W &kp B                  &kp J &kp F  &kp U     &kp P   &kp SEMI    &kp DEL
-   &kp TAB   &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E     &kp O   &kp I       &kp SINGLE_QUOTE
+   &tog NAV  &kp 4 &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E     &kp O   &kp I       &kp SINGLE_QUOTE
    &kp LGUI  &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp COMMA &kp DOT &kp FSLH    &kp RSHFT
           &mo RAISE &mt LSHFT BSPC &mt LCTRL TAB        &mt RALT ENTER &kp SPACE &mo LOWER
                         >;
