@@ -10,7 +10,7 @@
 #define QWER    5
  
  &lt {
-    tapping_term_ms = <150>;
+    tapping_term_ms = <100>;
  };
 
 / {
@@ -24,10 +24,10 @@
 // |  GUI  |  Z  |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | SHFT |
 //          | raise_layer | SHFT,BSPC | LCTRL,TAB |  | ALT,ENT | SPACE  | lower_layer |
                         bindings = <
-   &kp GRAVE &kp Q &kp D &kp R &kp W &kp B                  &kp J &kp F  &kp U     &kp P   &kp SEMI    &kp DEL
-   &tog NAV  &kp A &kp S &kp H &kp T &kp G                  &kp Y &kp N  &kp E     &kp O   &kp I       &kp SINGLE_QUOTE
-   &kp LGUI  &kp Z &kp X &kp M &kp C &kp V                  &kp K &kp L  &kp COMMA &kp DOT &kp FSLH    &kp RSHFT
-          &lt RAISE HOME &mt LSHFT BSPC &mt LCTRL TAB        &mt RALT ENTER &kp SPACE &lt LOWER END
+   &kp GRAVE &kp Q &kp D &kp R &kp W &kp B                    &kp J &kp F  &kp U     &kp P   &kp SEMI    &kp DEL
+   &tog NAV  &kp A &kp S &kp H &kp T &kp G                    &kp Y &kp N  &kp E     &kp O   &kp I       &kp SINGLE_QUOTE
+   &kp LGUI  &kp Z &kp X &kp M &kp C &kp V                    &kp K &kp L  &kp COMMA &kp DOT &kp FSLH    &kp RSHFT
+       &lt RAISE HOME &mt LSHFT BSPC &mt LCTRL TAB     &mt RALT ENTER &kp SPACE &lt LOWER END
                         >;
                 };
 
