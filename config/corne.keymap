@@ -44,28 +44,28 @@
 
                 right_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | QWER |  !  |  @  |  #  |  $  |  %  |                                       |  ^  |  &  |  *  |  (  |  )  |      |
-// |      |     |     |     |     |     |                                       |     |     |     |     |     |      |
+// |  ESC |     |     |     |     |     |                                       |     |     |     |     |     |      |
+// | QWER |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  | BSPC |
+// |      |  !  |  @  |  #  |  $  |  %  |                                       |  ^  |  &  |  *  |  (  |  )  |      |
 //                  | raise_layer |     | SHFT |                          | ENT |     | lower_layer |
                         bindings = <
-   &kp ESC    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &kp BSPC
-   &tog QWER  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT             &kp CARET  &kp AMPERSAND  &kp STAR   &kp LPAR  &kp RPAR  &trans
-   &trans     &trans    &trans  &trans    &trans    &trans                &trans     &trans         &trans     &trans    &trans    &trans
+   &kp ESC    &trans    &trans  &trans    &trans    &trans                &trans     &trans         &trans     &trans    &trans    &trans
+   &tog QWER  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &kp BSPC
+   &trans     &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT             &kp CARET  &kp AMPERSAND  &kp STAR   &kp LPAR  &kp RPAR  &trans
                                         &mo BT &trans &mo LEFT         &trans &trans &trans
                         >;
                 };
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |      | F9  | F10 | F11 | F12 |     |                                | "|" |  _  |  +  |  {  |  }  |      |
-// |      | F5  | F6  | F7  | F8  |     |                                |  \  |  -  |  =  |  [  |  ]  |      |
-// |      | F1  | F2  | F3  | F4  |     |                                |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
+// |  F1  | F2  | F3  | F4  | F5 | F6   |                                |  F7 |  F8 |  F9 | F10 | F11 | F12  |
+// |      | "|" |  _  |  +  |  {  |  }  |                                |  \  |  -  |  =  |  [  |  ]  |      |
+// |      |     |     |     |     |     |                                |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
 //                    |    |   |    |                   | RIGHT |     | BT |
                         bindings = <
-   &trans   &kp F9     &kp F10   &kp F11   &kp F12   &trans             &kp PIPE   &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC &trans
-   &trans   &kp F5    &kp F6     &kp F7    &kp F8    &trans             &kp BSLH   &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT &trans
-   &trans   &kp F1    &kp F2     &kp F3    &kp F4    &trans             &trans     &trans     &trans    &trans    &trans   &trans
+   &kp F1   &kp F2    &kp F3    &kp F4    &kp F5    &kp F6             &kp F7    &kp F8     &kp F9    &kp F10   &kp F11  &kp F12
+   &trans   &kp PIPE  &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC           &kp BSLH  &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT &trans
+   &trans   &trans    &trans    &trans    &trans    &trans             &trans    &trans     &trans    &trans    &trans   &trans
                                           &trans &trans &trans       &mo RIGHT &trans &mo BT
                         >;
                 };
