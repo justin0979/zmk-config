@@ -10,7 +10,7 @@
 #define QWER    5
  
  &lt {
-    tapping_term_ms = <100>;
+    tapping_term_ms = <50>;
  };
 
 / {
