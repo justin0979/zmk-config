@@ -30,10 +30,10 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |   HOME,`   | Q | D     |  R    |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  | END,DEL  |
-// |  NAV       | A | CTL,S | ALT,H |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
-// |  GUI       | Z | X     |  M    |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | ALT  |
-//                | raise_layer | BSPC | SHFT,TAB |              | SHFT,ENT | SPACE  | lower_layer |
+// |  HOME,` | Q | D     |  R    |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  | END,DEL  |
+// |  NAV    | A | CTL,S | ALT,H |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  '   |
+// |  GUI    | Z | X     |  M    |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | ALT  |
+//             | raise_layer | BSPC | SHFT,TAB |              | SHFT,ENT | SPACE  | lower_layer |
                         bindings = <
    &hm HOME GRAVE &kp Q &kp D       &kp R      &kp W &kp B         &kp J &kp F  &kp U     &kp P   &kp SEMI    &hm END DEL
    &tog NAV       &kp A &hm LCTRL S &hm LALT H &kp T &kp G         &kp Y &kp N  &kp E     &kp O   &kp I       &kp SINGLE_QUOTE
@@ -45,13 +45,13 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | QWER |     |     |HOME | END |     |                                       |  \  |  -  |  =  |  [  |  ]  |  UP  |
-// |      |     |     |     |     |     |                                       |     |     |     |     |     |  DWN |
+// | QWER |  !  |  @  |  #  |  $  |  %  |                                       |  ^  |  &  |  *  |  (  |  )  |      |
+// |      |     |     |     |     |     |                                       |     |     |     |     |     |      |
 //                  | raise_layer |     | SHFT |                          | ENT |     | lower_layer |
                         bindings = <
-   &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                &kp N6    &kp N7     &kp N8    &kp N9    &kp N0    &kp BSPC
-   &tog QWER  &trans  &trans  &kp 0x4A  &kp 0x4D  &trans                &kp BSLH  &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &kp UP
-   &trans     &trans  &trans  &trans    &trans    &trans                &trans    &trans     &trans    &trans    &trans    &kp DOWN
+   &kp ESC    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &kp BSPC
+   &tog QWER  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT             &kp CARET  &kp AMPERSAND  &kp STAR   &kp LPAR  &kp RPAR  &trans
+   &trans     &trans    &trans  &trans    &trans    &trans                &trans     &trans         &trans     &trans    &trans    &trans
                                     &mo BT &trans &mo RAISE         &trans &trans &trans
                         >;
                 };
@@ -59,13 +59,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC  |  !  | @   |  #  |  $  |  %  |                                |  ^  |  &  |  *  |  (  |  )  |      |
-// | NAV  | NP4 | NP8 | NP2 | NP6 | NP5 |                                | "|" |  _  |  +  |  {  |  }  |      |
+// | NAV  | "|" |  _  |  +  |  {  |  }  |                                | "|" |  _  |  +  |  {  |  }  |      |
 // |      | F1  | F2  | F3  | NP3 |     |                                |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
-   &kp ESC     &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT            &kp CARET  &kp AMPERSAND  &kp STAR  &kp LPAR  &kp RPAR &trans
-   &tog NAV    &kp 0x5C  &kp 0x60  &kp 0x5A  &kp 0x5E   &kp 0x5D             &kp PIPE   &kp UNDER      &kp PLUS  &kp LBRC  &kp RBRC &trans
-   &trans  &kp F1    &kp F2    &kp F3    &kp 0x5B   &trans               &trans     &trans         &trans    &trans    &trans   &trans
+   &kp ESC  &kp EXCL  &kp AT     &kp HASH  &kp DLLR &kp PRCNT            &kp CARET  &kp AMPERSAND  &kp STAR  &kp LPAR  &kp RPAR &trans
+   &tog NAV &kp PIPE  &kp UNDER  &kp PLUS  &kp LBRC &kp RBRC             &kp BSLH   &kp MINUS      &kp EQL   &kp LBKT  &kp RBKT &trans
+   &trans   &kp F1    &kp F2     &kp F3    &kp 0x5B &trans               &trans     &trans         &trans    &trans    &trans   &trans
                                              &trans &trans &trans       &mo LOWER &trans &mo BT
                         >;
                 };
