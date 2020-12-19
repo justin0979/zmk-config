@@ -6,7 +6,8 @@
 #define LOWER   1
 #define RAISE   2
 #define NAV     3
-#define QWER    4
+#define BT      4
+#define QWER    5
 
 / {
         keymap {
@@ -36,7 +37,7 @@
    &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                &kp N6    &kp N7     &kp N8    &kp N9    &kp N0    &kp BSPC
    &tog QWER  &trans  &trans  &kp 0x4A  &kp 0x4D  &trans                &kp BSLH  &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT  &kp UP
    &trans     &trans  &trans  &trans    &trans    &trans                &trans    &trans     &trans    &trans    &trans    &kp DOWN
-                                        &mo 2 &trans &trans          &trans &trans &mo 1
+                                    &mo BT &trans &trans         &trans &trans &trans
                         >;
                 };
 
@@ -44,13 +45,13 @@
 // -----------------------------------------------------------------------------------------
 // | ESC  |  !  | @   |  #  |  $  |  %  |                                |  ^  |  &  |  *  |  (  |  )  |      |
 // | NAV  | NP4 | NP8 | NP2 | NP6 | NP5 |                                | "|" |  _  |  +  |  {  |  }  |      |
-// | BTC  | F1  | F2  | F3  | NP3 |     |                                |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
+// |      | F1  | F2  | F3  | NP3 |     |                                |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
    &kp ESC     &kp EXCL  &kp AT    &kp HASH  &kp DLLR   &kp PRCNT            &kp CARET  &kp AMPERSAND  &kp STAR  &kp LPAR  &kp RPAR &trans
    &tog NAV    &kp 0x5C  &kp 0x60  &kp 0x5A  &kp 0x5E   &kp 0x5D             &kp PIPE   &kp UNDER      &kp PLUS  &kp LBRC  &kp RBRC &trans
-   &bt BT_CLR  &kp F1    &kp F2    &kp F3    &kp 0x5B   &trans               &trans     &trans         &trans    &trans    &trans   &trans
-                                             &mo 2 &trans &trans       &trans &trans &mo 1
+   &trans  &kp F1    &kp F2    &kp F3    &kp 0x5B   &trans               &trans     &trans         &trans    &trans    &trans   &trans
+                                             &trans &trans &trans       &trans &trans &mo BT
                         >;
                 };
 
@@ -58,16 +59,29 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  !  | @   |  #  |  $  |   % |                                |  ^  |  &  |  *  |  (  |  )  |      |
 // |  tog | NP5 | NP4 | NP8 | NP2 | NP6 |                                | LFT | DWN |  UP | RGT |     |      |
-// |      | F1  | F2  | F3  | NP3 |     |                                |     | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
+// |      | F1  | F2  | F3  | NP3 |     |                                |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
 //                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
-   &kp ESC   &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET   &kp AMPERSAND  &kp STAR       &kp LPAR       &kp RPAR        &trans
-   &tog NAV  &kp 0x5D &kp 0x5C &kp 0x60  &kp 0x5A  &kp 0x5E             &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT      &trans          &trans
-   &trans    &kp F1   &kp F2   &kp F3    &kp 0x5B  &trans               &trans      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
+   &kp ESC   &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET   &kp AMPERSAND  &kp STAR  &kp LPAR   &kp RPAR &trans
+   &tog NAV  &kp 0x5D &kp 0x5C &kp 0x60  &kp 0x5A  &kp 0x5E             &kp LEFT    &kp DOWN       &kp UP    &kp RIGHT  &trans   &trans
+   &trans    &kp F1   &kp F2   &kp F3    &kp 0x5B  &trans               &trans      &trans         &trans    &trans     &trans   &trans
                                              &trans  &trans &trans       &trans &trans &trans
                         >;
                 };
-                
+
+                bluetooth_layer {
+// -----------------------------------------------------------------------------------------
+// |  ESC |  !  | @   |  #  |  $  |   % |                                |  ^  |  &  |  *  |  (  |  )  |      |
+// |  tog | NP5 | NP4 | NP8 | NP2 | NP6 |                                | LFT | DWN |  UP | RGT |     |      |
+// |  BTC | F1  | F2  | F3  | NP3 |     |                                |     | BT0 | BT1 | BT2 | BT3 | BT4  | // TODO: Fix this row when &mkp is committed
+//                    | raise_layer |   | SHFT |                   | ENT |     | lower_layer |
+                        bindings = <
+   &kp ESC    &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT            &kp CARET   &kp AMPERSAND  &kp STAR       &kp LPAR       &kp RPAR        &trans
+   &tog NAV   &kp 0x5D &kp 0x5C &kp 0x60  &kp 0x5A  &kp 0x5E             &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT      &trans          &trans
+   &bt BT_CLR &kp F1   &kp F2   &kp F3    &kp 0x5B  &trans               &trans      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
+                                             &trans  &trans &trans       &trans &trans &trans
+                        >;
+                };
                 
                 qwerty_layer {
 // -----------------------------------------------------------------------------------------
