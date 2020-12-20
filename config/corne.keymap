@@ -33,12 +33,12 @@
 // |  HOME,` | Q | D     |  R    |  W  |  B  |                          |  J  |  F   |  U  |  P  |  ;  | END,DEL  |
 // |  TAB    | A | CTL,S | ALT,H |  T  |  G  |                          |  Y  |  N   |  E  |  O  |  I  |  '   |
 // |  GUI    | Z | X     |  M    |  C  |  V  |                          |  K  |  L   |  ,  |  .  |  /  | NAV  |
-//                   | raise_layer | SHFT | BSPC |                 | ALT,ENT | SPACE  | lower_layer |
+//               | raise_layer | SHFT,BSPC | BSPC |                 | ALT,ENT | SPACE  | lower_layer |
                         bindings = <
    &hm HOME GRAVE &kp Q &kp D       &kp R      &kp W &kp B           &kp J &kp F  &kp U     &kp P   &kp SEMI  &hm END DEL
    &kp TAB        &kp A &hm LCTRL S &hm LALT H &kp T &kp G           &kp Y &kp N  &kp E     &kp O   &kp I     &kp SINGLE_QUOTE
    &kp LGUI       &kp Z &kp X       &kp M      &kp C &kp V           &kp K &kp L  &kp COMMA &kp DOT &kp FSLH  &tog NAV
-                                &mo LEFT  &kp LSHFT  &kp BSPC     &mt RALT ENTER &kp SPACE &mo RIGHT
+                           &mo LEFT  &mt LSHFT BSPC  &kp BSPC     &mt RALT ENTER &kp SPACE &mo RIGHT
                         >;
                 };
 
@@ -58,14 +58,14 @@
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |  F1  | F2  | F3  | F4  | F5 | F6   |                                |  F7 |  F8 |  F9 | F10 | F11 | F12  |
+// |  ESC | F2  | F3  | F4  | F5 | F6   |                                | "|" |  _  |  +  |  {  |  }  |      |
 // |      | "|" |  _  |  +  |  {  |  }  |                                |  \  |  -  |  =  |  [  |  ]  |      |
 // |      |     |     |     |     |     |                                | "|" |  _  |  +  |  {  |  }  |      | // TODO: Fix this row when &mkp is committed
 //                    |    |   |    |                   | RIGHT |     | BT |
                         bindings = <
-   &kp F1   &kp F2    &kp F3    &kp F4    &kp F5    &kp F6             &kp F7    &kp F8     &kp F9    &kp F10   &kp F11  &kp F12
+   &kp ESC  &kp F2    &kp F3    &kp F4    &kp F5    &kp F6             &kp PIPE  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC &trans
    &trans   &kp PIPE  &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC           &kp BSLH  &kp MINUS  &kp EQL   &kp LBKT  &kp RBKT &trans
-   &trans   &trans    &trans    &trans    &trans    &trans             &kp PIPE  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC &trans
+   &trans   &trans    &trans    &trans    &trans    &trans             &kp PIPE  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC &trans            
                                           &trans &trans &trans       &mo RIGHT &trans &mo BT
                         >;
                 };
