@@ -13,17 +13,13 @@
     tapping_term_ms = <75>;
  };
 
- &mt {
-         tapping_term_ms = <200>;
- };
-
 / {
         behaviors {
                 hm: homerow_mods {
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOMEROW_MODS";
                         #binding-cells = <2>;
-                        tapping_term_ms = <200>;
+                        tapping_term_ms = <175>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
@@ -40,7 +36,7 @@
 //                   | raise_layer | SHFT | BSPC |                 | ALT,ENT | SPACE  | lower_layer |
                         bindings = <
    &hm HOME GRAVE &kp Q &kp D       &kp R      &kp W &kp B           &kp J &kp F  &kp U     &kp P   &kp SEMI  &hm END DEL
-   &kp TAB        &kp A &mt LCTRL S &mt LALT H &kp T &kp G           &kp Y &kp N  &kp E     &kp O   &kp I     &kp SINGLE_QUOTE
+   &kp TAB        &kp A &hm LCTRL S &hm LALT H &kp T &kp G           &kp Y &kp N  &kp E     &kp O   &kp I     &kp SINGLE_QUOTE
    &kp LGUI       &kp Z &kp X       &kp M      &kp C &kp V           &kp K &kp L  &kp COMMA &kp DOT &kp FSLH  &tog NAV
                                 &mo LEFT  &kp LSHFT  &kp BSPC     &mt RALT ENTER &kp SPACE &mo RIGHT
                         >;
