@@ -38,7 +38,7 @@
    &hm HOME GRAVE &kp Q &kp D       &kp R      &kp W &kp B           &kp J &kp F  &kp U     &kp P   &kp SEMI  &hm END DEL
    &kp TAB        &kp A &hm LCTRL S &hm LALT H &kp T &kp G           &kp Y &kp N  &kp E     &kp O   &kp I     &kp SINGLE_QUOTE
    &kp LGUI       &kp Z &kp X       &kp M      &kp C &kp V           &kp K &kp L  &kp COMMA &kp DOT &kp FSLH  &tog NAV
-                                 &mo LEFT  &kp BSPC  &kp BSPC     &mt RALT ENTER &kp SPACE &mo RIGHT
+                                 &mo LEFT  &kp LSHFT  &kp BSPC     &mt RALT ENTER &kp SPACE &mo RIGHT
                         >;
                 };
 
