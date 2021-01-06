@@ -59,14 +59,14 @@
                 left_layer {
 // -----------------------------------------------------------------------------------------
 // | HOME | F2  | F3  | F4  | F5  |LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |  END |
-// |      |     |     |     |CA(T)|     |                                |  \  |  -  |  =  |  [  |  ]  |      |
+// |      |     |     |     |CA(T)|     |                                | LFT | DWN | UP  | RGT |  ]  |      |
 // | LGUI |     |     |     | C(C)|     |                                | "|" |  _  |  +  |  {  |  }  |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | NAV | NAV  | BT |
                         bindings = <
-   &kp HOME &kp F2    &kp F3    &kp F4    &kp F5        &kp LC(B)          &kp PIPE  &kp LC(F)      &kp LC(U) &kp LBRC  &kp RBRC &kp END
-   &trans   &trans    &trans    &trans    &kp LC(RA(T)) &trans             &kp BSLH  &kp LC(LS(N))  &kp EQL   &kp LBKT  &kp RBKT &trans
-   &kp LGUI &trans    &trans    &trans    &kp LC(C)     &trans             &kp PIPE  &kp UNDER      &kp PLUS  &kp LBRC  &kp RBRC &trans            
-                                             &trans &trans &trans       &tog NAV &tog NAV &mo BT
+   &kp HOME &kp F2  &kp F3   &kp F4   &kp F5        &kp LC(B)          &kp PIPE        &kp LC(F) &kp LC(U)  &kp LBRC        &kp RBRC &kp END
+   &trans   &trans  &trans   &trans   &kp LC(RA(T)) &trans             &kp LEFT_ARROW  &kp DOWN  &kp UP     &kp RIGHT_ARROW &kp RBKT &trans
+   &kp LGUI &trans  &trans   &trans   &kp LC(C)     &trans             &kp PIPE        &kp UNDER  &kp PLUS  &kp LBRC        &kp RBRC &trans            
+                                         &trans &trans &trans       &tog NAV &tog NAV &mo BT
                         >;
                 };
 
