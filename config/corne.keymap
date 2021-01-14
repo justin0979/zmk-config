@@ -33,26 +33,26 @@
 // |   `   | Q | D     | R     |  W  |  B  |                          |  J  |  F   |  U  |  P  |  ;  | DEL |
 // |  ESC  | A | CTL,S | ALT,H |  T  |  G  |                          |  Y  |  N   |  E  |  O  |  I  |  '  |
 // |  TAB  | Z | X     | M     |  C  |  V  |                          |  K  |  L   |  ,  |  .  |  /  | NAV |
-//                       | LEFT | SHFT | CTL,TAB |                 | ALT,ENT | SPACE  | RIGHT |
+//                       | LEFT | SHFT | CTL |                 | ALT,ENT | SPACE  | RIGHT |
                         bindings = <
    &kp GRAVE   &kp Q &kp D         &kp R       &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &kp DEL
    &kp ESC     &kp A &hm LCTRL S   &hm LALT H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &kp SINGLE_QUOTE
    &kp TAB     &kp Z &kp X         &kp M       &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
-                             &mo LEFT  &kp LSHFT &mt LCTRL TAB    &mt RALT ENTER &kp SPACE &mo RIGHT
+                                 &mo LEFT  &kp LSHFT &kp LCTRL     &mt RALT ENTER &kp SPACE &mo RIGHT
                         >;
                 };
 
                 right_layer {
 // -----------------------------------------------------------------------------------------
 // | HOME |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  | END |
-// | QWER |  !  |  @  |  #  |  $  |  %  |                                       |  \  |  -  |  =  |  [  |  ]  |     |
+// | QWER |  `  |  '  | ESC | TAB |CAPS |                                       |  \  |  -  |  =  |  [  |  ]  |     |
 // | LGUI |     |     |     |     |     |                                       |     |     |     |     |     |     |
 //                          | BT |    | BSPC |                          | ENT |     | lower_layer |
                         bindings = <
-   &kp HOME  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &kp END
-   &tog QWER &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT             &kp BSLH   &kp MINUS      &kp EQL    &kp LBKT  &kp RBKT  &trans
-   &kp LGUI  &trans    &trans  &trans    &trans    &trans                &trans     &trans         &trans     &trans    &trans    &trans
-                                       &mo BT &trans &kp BSPC         &trans &trans &trans
+   &kp HOME  &kp N1    &kp N2   &kp N3  &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &kp END
+   &tog QWER &kp GRAVE &kp SQT  &kp ESC &kp TAB   &kp CAPS              &kp BSLH   &kp MINUS      &kp EQL    &kp LBKT  &kp RBKT  &trans
+   &kp LGUI  &trans    &trans   &trans  &trans    &trans                &trans     &trans         &trans     &trans    &trans    &trans
+                                     &mo BT &trans &kp BSPC         &trans &trans &trans
                         >;
                 };
 
