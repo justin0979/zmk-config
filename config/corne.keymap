@@ -32,41 +32,41 @@
 // -----------------------------------------------------------------------------------------
 // |       | Q | D     | R     |  W  |  B  |                          |  J  |  F   |  U  |  P  |  ;  |     |
 // |       | A | CTL,S | ALT,H |  T  |  G  |                          |  Y  |  N   |  E  |  O  |  I  |     |
-// |  TAB  | Z | X     | M     |  C  |  V  |                          |  K  |  L   |  ,  |  .  |  /  | NAV |
+// |       | Z | X     | M     |  C  |  V  |                          |  K  |  L   |  ,  |  .  |  /  | NAV |
 //                       | LEFT | SHFT | CTL |                 | ALT,ENT | SPACE  | RIGHT |
                         bindings = <
    &trans     &kp Q &kp D         &kp R       &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans     &kp A &hm LCTRL S   &hm LALT H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
-   &kp TAB    &kp Z &kp X         &kp M       &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
+   &trans     &kp Z &kp X         &kp M       &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
                                 &mo LEFT  &kp LSHFT &kp LCTRL     &mt RALT ENTER &kp SPACE &mo RIGHT
                         >;
                 };
 
                 right_layer {
 // -----------------------------------------------------------------------------------------
-// | HOME |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  | END |
+// |      |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  |     |
 // | QWER |  `  |  '  | LALT| TAB | DEL |                                       |  \  |  -  |  =  |  [  |  ]  |     |
-// | LGUI |     |     |     |     |     |                                       |     |     |     |     |     |     |
+// | LGUI | HOME|     |     |     |     |                                       |     |     |     |     | END |     |
 //                          | BT |    | BSPC |                          | ENT |     | lower_layer |
                         bindings = <
-   &kp HOME  &kp N1    &kp N2   &kp N3   &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &kp END
+   &trans    &kp N1    &kp N2   &kp N3   &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &trans
    &tog QWER &kp GRAVE &kp SQT  &kp LALT &kp TAB   &kp DEL               &kp BSLH   &kp MINUS      &kp EQL    &kp LBKT  &kp RBKT  &trans
-   &kp LGUI  &trans    &trans   &trans   &trans    &trans                &trans     &trans         &trans     &trans    &trans    &trans
+   &kp LGUI  &kp HOME  &trans   &trans   &trans    &trans                &trans     &trans         &trans     &trans    &kp END   &trans
                                      &mo BT &trans &kp BSPC         &trans &trans &trans
                         >;
                 };
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// | HOME |     | DEL | F4  | F5  |LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |  END |
-// |      |TILDE| DEL | DEL | ESC |     |                                | LFT | DWN | UP  | RGT |  ]  |      |
-// | LGUI |     |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
+// |      |     |     | F4  | F5  |LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |      |
+// |      |TILDE|  "  | DEL | ESC |     |                                | LFT | DWN | UP  | RGT |  ]  |      |
+// | LGUI |HOME |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | END |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | NP5 | NP0  | BT |
                         bindings = <
-   &kp HOME &trans     &kp DEL &kp F4   &kp F5   &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC  &kp END
-   &trans   &kp TILDE  &kp DEL &kp DEL  &kp ESC  &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp RBKT  &trans
-   &kp LGUI &trans     &trans  &trans   &trans   &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp 0x5D  &trans
-                                        &trans &trans &trans       &kp KP_N5 &kp KP_N0 &mo BT
+   &trans   &trans      &trans      &kp F4   &kp F5   &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC  &trans
+   &trans   &kp TILDE   &kp LS(SQT) &kp DEL  &kp ESC  &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp RBKT  &trans
+   &kp LGUI &kp HOME    &trans      &trans   &trans   &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp END   &trans
+                                           &trans &trans &trans       &kp KP_N5 &kp KP_N0 &mo BT
                         >;
                 };
 
