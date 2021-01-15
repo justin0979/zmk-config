@@ -59,14 +59,14 @@
                 left_layer {
 // -----------------------------------------------------------------------------------------
 // | HOME |     | DEL | F4  | F5  |LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |  END |
-// |      |     | DEL | DEL | ESC |     |                                | LFT | DWN | UP  | RGT |  ]  |      |
+// |      |TILDE| DEL | DEL | ESC |     |                                | LFT | DWN | UP  | RGT |  ]  |      |
 // | LGUI |     |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | NP5 | NP0  | BT |
                         bindings = <
-   &kp HOME &trans  &kp DEL &kp F4   &kp F5   &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC  &kp END
-   &trans   &trans  &kp DEL &kp DEL  &kp ESC  &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp RBKT  &trans
-   &kp LGUI &trans  &trans  &trans   &trans   &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp 0x5D  &trans
-                                     &trans &trans &trans       &kp KP_N5 &kp KP_N0 &mo BT
+   &kp HOME &trans     &kp DEL &kp F4   &kp F5   &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC  &kp END
+   &trans   &kp TILDE  &kp DEL &kp DEL  &kp ESC  &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp RBKT  &trans
+   &kp LGUI &trans     &trans  &trans   &trans   &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp 0x5D  &trans
+                                        &trans &trans &trans       &kp KP_N5 &kp KP_N0 &mo BT
                         >;
                 };
 
