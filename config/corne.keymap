@@ -73,7 +73,7 @@
                 navigation_layer {
 // -----------------------------------------------------------------------------------------
 // |  F  |  9  |  Q  |  W  |  E  |  1  |                                |  ^  |  &  |  *  |  (  |  )  | END  |
-// |  F5 |  8  |  S  |  A  |  D  |  2  |                                | LFT | DWN |  UP | RGT |     |      |
+// |  F5 |  8  |  A  |  S  |  D  |  2  |                                | LFT | DWN |  UP | RGT |     |      |
 // |     |  7  |  6  |  5  |  4  |  3  |                                |     |     |     |     |     | NAV  | // TODO: Fix this row when &mkp is committed
 //               | CTRL  | SPACE  | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
