@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define RIGHT   1
-#define LEFT    2
+#define RSIDE   1
+#define LSIDE   2
 #define NAV     3
 #define BT      4
 #define QWER    5
@@ -50,7 +50,7 @@
    &trans  &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans  &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
-                 &mo LEFT  &sk LSHFT &sk LCTRL     &mt RALT ENTER &kp SPACE &mo RIGHT
+                 &mo LSIDE  &sk LSHFT &sk LCTRL     &mt RALT ENTER &kp SPACE &mo RSIDE
                         >;
                 };
 
