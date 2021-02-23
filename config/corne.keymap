@@ -14,7 +14,6 @@
  };
 
 / {
-
   combos {
             compatible = "zmk,combos";
         combo_esc {
@@ -24,9 +23,6 @@
             layers = <-1>;
         };
   };
-}
-
-/ {
 
         behaviors {
                 hm: homerow_mods {
