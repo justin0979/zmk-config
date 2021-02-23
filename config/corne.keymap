@@ -18,8 +18,8 @@
                 compatible = "zmk,combos";
                 combo_esc {
                     timeout-ms = <50>;
-                    key-positions = <5 6>;
-                    bindings = <&kp x>;
+                    key-positions = <1 2>;
+                    bindings = <&kp X>;
                 };
         };
   
