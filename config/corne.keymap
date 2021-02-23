@@ -14,6 +14,16 @@
  };
 
 / {
+        combos {
+                compatible = "zmk,combos";
+                combo_esc {
+                    timeout-ms = <50>;
+                    key-positions = <0 1>;
+                    bindings = <&kp ESC>;
+                    layers = <-1>;
+                };
+        };
+
         behaviors {
                 hm: homerow_mods {
                         compatible = "zmk,behavior-hold-tap";
@@ -38,7 +48,7 @@
    &trans  &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans  &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
-                 &mo LSIDE  &sk LSHFT &sk LCTRL     &sk RALT ENTER &kp SPACE &mo RSIDE
+                 &mo LSIDE  &sk LSHFT &sk LCTRL     &mt RALT ENTER &kp SPACE &mo RSIDE
                         >;
                 };
 
