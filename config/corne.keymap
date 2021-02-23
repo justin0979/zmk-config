@@ -10,7 +10,7 @@
 #define QWER    5
 
 &lt {
-  flavor = "hold-preferred";
+  flavor = "tap-preferred";
 };
 
 / {
