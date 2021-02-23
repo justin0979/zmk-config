@@ -14,6 +14,7 @@
  };
 
 / {
+
         combos {
                 compatible = "zmk,combos";
                 combo_esc {
@@ -24,6 +25,9 @@
                 };
         };
 
+}
+
+/ {
         behaviors {
                 hm: homerow_mods {
                         compatible = "zmk,behavior-hold-tap";
