@@ -23,8 +23,8 @@
                 };
                 combo_quote {
                   timeout-ms = <50>;
-                  key-positions = <13 40>
-                  bindings = <&kp SQT>
+                  key-positions = <13 40>;
+                  bindings = <&kp SQT>;
                 };
         };
   
