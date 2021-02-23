@@ -16,10 +16,15 @@
 / {
         combos {
                 compatible = "zmk,combos";
-                combo_esc {
+                combo_bspc {
                     timeout-ms = <50>;
                     key-positions = <38 39>;
-                    bindings = <&kp X>;
+                    bindings = <&kp BSPC>;
+                };
+                combo_quote {
+                  timeout-ms = <50>;
+                  key-positions = <13 40>
+                  bindings = <&kp SQT>
                 };
         };
   
