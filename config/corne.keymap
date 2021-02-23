@@ -23,7 +23,7 @@
             bindings = <&kp ESC>;
             layers = <-1>;
         };
-  }
+  };
 }
 
 / {
