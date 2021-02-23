@@ -10,7 +10,7 @@
 #define QWER    5
 
  &lt {
-    tapping_term_ms = <75>;
+    tapping_term_ms = <175>;
  };
 
 / {
@@ -122,9 +122,9 @@
 // | LGUI |HOME |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | END |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | NP5 | NP0  | BT |
                         bindings = <
-   &trans   &trans      &trans   &kp F4   &kp F5   &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
-   &trans   &kp LS(SQT) &trans   &kp DEL  &kp ESC  &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &kp LGUI &kp HOME    &trans   &trans   &trans   &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp END    &trans
+   &trans   &trans      &trans   &kp F4   &kp F5     &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
+   &trans   &kp LS(SQT) &trans   &kp DEL  &kp ESC    &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
+   &kp LGUI &kp HOME    &trans   &trans   &kp LC(C)  &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp END    &trans
                                          &trans &trans &trans       &kp KP_N5 &kp KP_N0 &mo BT
                         >;
                 };
