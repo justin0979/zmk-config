@@ -92,12 +92,12 @@
 // |     | Q |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  |     |
 // |     | A |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |     |
 // |     | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | NAV |
-//                   | LEFT | SHFT | CTL |          | ALT,ENT | SPACE  | RIGHT |
+//                   | LEFT | SHFT | CTL |          | RIGHT | SPACE  | ALT,ESC |
                         bindings = <
    &trans  &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans  &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
-                 &sk LCTRL &sk LSHFT &mo LSIDE     &lt RSIDE ENTER &kp SPACE &mt RALT ESC
+                 &sk LCTRL &sk LSHFT &mo LSIDE     &mo RSIDE &kp SPACE &mt RALT ESC
                         >;
                 };
 
@@ -119,13 +119,13 @@
 // -----------------------------------------------------------------------------------------
 // |      |     |     | F4  | F5  |LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |      |
 // |      |  "  |     | DEL | ESC |     |                                | LFT | DWN | UP  | RGT |  ~  |      |
-// | LGUI |HOME |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | END |      | // TODO: Fix this row when &mkp is committed
-//                              |    |   |    |                   | NP5 | NP0  | BT |
+// | LGUI |HOME |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
+//                              |    |   |    |                   | ENTER | NP0  | BT |
                         bindings = <
    &trans   &trans      &trans   &kp F4   &kp F5     &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
    &trans   &kp LS(SQT) &trans   &kp DEL  &kp ESC    &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &kp LGUI &kp HOME    &trans   &trans   &kp LC(C)  &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp END    &trans
-                                         &trans &trans &trans       &kp KP_N5 &kp KP_N0 &mo BT
+   &kp LGUI &kp HOME    &trans   &trans   &kp LC(C)  &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp KP_N5  &trans
+                                         &trans &trans &trans       &kp ENTER &kp KP_N0 &mo BT
                         >;
                 };
 
