@@ -10,8 +10,8 @@
 #define QWER    5
 
 &lt {
-  flavor = "hold-preferred"
-}
+  flavor = "hold-preferred";
+};
 
 / {
         combos {
