@@ -118,12 +118,12 @@
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     | F4  |LC(W)|LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |      |
+// |      |  !  |  @  | F4  |LC(W)|LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |      |
 // |      |  "  |     | DEL | ESC |     |                                | LFT | DWN | UP  | RGT |  ~  |      |
 // | LGUI |HOME |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | ENTER | NP0  | BT |
                         bindings = <
-   &trans   &trans      &trans   &kp F4   &kp LC(W)  &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
+   &trans   &kp EXCL    &kp AT   &kp F4   &kp LC(W)  &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
    &trans   &kp LS(SQT) &trans   &kp DEL  &kp ESC    &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
    &kp LGUI &kp HOME    &trans   &trans   &kp LC(C)  &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp KP_N5  &trans
                                          &trans &trans &trans       &kp ENTER &kp KP_N0 &mo BT
