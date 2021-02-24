@@ -22,58 +22,13 @@
                     key-positions = <38 40>;
                     bindings = <&kp BSPC>;
                 };
-                combo_lbrc {
-                  timeout-ms = <50>;
-                  key-positions = <9 40>;
-                  bindings = <&kp LBRC>;
-                };
-                combo_rbrc {
-                  timeout-ms = <50>;
-                  key-positions = <10 40>;
-                  bindings = <&kp RBRC>;
-                };
-                combo_quote {
-                  timeout-ms = <50>;
-                  key-positions = <13 39>;
-                  bindings = <&kp SQT>;
-                };
-                combo_grave {
-                  timeout-ms = <50>;
-                  key-positions = <14 40>;
-                  bindings = <&kp GRAVE>;
-                };
-                combo_tab {
-                  timeout-ms = <50>;
-                  key-positions = <16 39>;
-                  bindings = <&kp TAB>;
-                };
-                combo_bslh {
-                  timeout-ms = <50>;
-                  key-positions = <18 40>;
-                  bindings = <&kp BSLH>;
-                };
                 combo_minus {
                   timeout-ms = <50>;
                   key-positions = <19 39>;
                   bindings = <&kp MINUS>;
                 };
-                combo_EQL {
-                  timeout-ms = <50>;
-                  key-positions = <20 40>;
-                  bindings = <&kp EQL>;
-                };
-                combo_lbkt {
-                  timeout-ms = <50>;
-                  key-positions = <21 40>;
-                  bindings = <&kp LBKT>;
-                };
-                combo_rbkt {
-                  timeout-ms = <50>;
-                  key-positions = <22 40>;
-                  bindings = <&kp RBKT>;
-                };
         };
-  
+ 
         behaviors {
                 hm: homerow_mods {
                         compatible = "zmk,behavior-hold-tap";
