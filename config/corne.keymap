@@ -34,7 +34,7 @@
                 };
                 combo_quote {
                   timeout-ms = <50>;
-                  key-positions = <13 40>;
+                  key-positions = <13 39>;
                   bindings = <&kp SQT>;
                 };
                 combo_grave {
@@ -44,7 +44,7 @@
                 };
                 combo_tab {
                   timeout-ms = <50>;
-                  key-positions = <16 40>;
+                  key-positions = <16 39>;
                   bindings = <&kp TAB>;
                 };
                 combo_bslh {
@@ -54,7 +54,7 @@
                 };
                 combo_minus {
                   timeout-ms = <50>;
-                  key-positions = <19 40>;
+                  key-positions = <19 39>;
                   bindings = <&kp MINUS>;
                 };
                 combo_EQL {
@@ -93,12 +93,12 @@
 // |     | Q |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  |     |
 // |     | A |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |     |
 // |     | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | NAV |
-//                   | LCTRL | SHFT | LEFT |          | RIGHT | SPACE  | ALT,ESC |
+//                   | LCTRL | SHFT | LEFT |          | ENTER | RIGHT,SPACE  | ALT,ESC |
                         bindings = <
    &trans  &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans  &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
-                 &sk LCTRL &sk LSHFT &mo LSIDE     &lt RSIDE ENTER &kp SPACE &mt RALT ESC
+                 &sk LCTRL &sk LSHFT &mo LSIDE     &kp ENTER &lt RSIDE SPACE &mt RALT ESC
                         >;
                 };
 
