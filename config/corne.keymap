@@ -76,13 +76,13 @@
                 left_layer {
 // -----------------------------------------------------------------------------------------
 // |      |  !  |  @  | F4  |LC(W)|LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |      |
-// |      |  "  | ASTa| ATa |     |     |                                | LFT | DWN | UP  | RGT |  ~  |      |
+// |      |  "  | CTL | ALT | TAB |     |                                | LFT | DWN | UP  | RGT |  ~  |      |
 // | LGUI |HOME |     |     |     | SCV |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | SHIFT | MOD | BT |
                         bindings = <
-   &trans   &kp EXCL  &kp AT   &kp F4  &kp LC(W)      &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
-   &trans   &sk LCTRL &sk LALT &kp TAB &kp LC(LS(T))  &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &kp LGUI &kp HOME  &trans   &trans  &kp LC(C)      &kp LS(LC(V))         &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp KP_N5  &trans
+   &trans   &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
+   &trans   &kp LS(SQT) &sk LCTRL &sk LALT &kp TAB   &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
+   &kp LGUI &kp HOME    &trans    &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp KP_N5  &trans
                                                 &trans &trans &trans       &sk RSHFT &mo MOD &mo BT
                         >;
                 };
