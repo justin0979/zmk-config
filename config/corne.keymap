@@ -54,7 +54,7 @@
    &trans  &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans  &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
-             &sk LCTRL &sk LSHFT &lt LSIDE BSPC     &kp ENTER &lt RSIDE SPACE &kp RALT
+             &sk LCTRL &kp LSHFT &lt LSIDE BSPC     &kp ENTER &lt RSIDE SPACE &kp RALT
                         >;
                 };
 
