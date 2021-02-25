@@ -10,7 +10,7 @@
 #define QWER    5
 
 &lt {
-  tapping-term-ms = <130>;
+  tapping-term-ms = <125>;
   flavor = "balanced";
 };
 
@@ -54,7 +54,7 @@
    &trans  &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans  &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog NAV
-             &sk LCTRL &kp LSHFT &lt LSIDE BSPC     &kp ENTER &lt RSIDE SPACE &kp RALT
+             &sk LCTRL &lt LSIDE BSPC &kp LSHFT    &kp ENTER &lt RSIDE SPACE &kp RALT
                         >;
                 };
 
@@ -76,13 +76,13 @@
 // -----------------------------------------------------------------------------------------
 // |      |  !  |  @  | F4  |LC(W)|LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |      |
 // |      |  "  |     | DEL | ESC |     |                                | LFT | DWN | UP  | RGT |  ~  |      |
-// | LGUI |HOME |     |     |     |     |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
+// | LGUI |HOME |     |     |     | SCV |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | ENTER | NP0  | BT |
                         bindings = <
    &trans   &kp EXCL    &kp AT   &kp F4   &kp LC(W)  &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
    &trans   &kp LS(SQT) &trans   &kp DEL  &kp ESC    &trans                &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &kp LGUI &kp HOME    &trans   &trans   &kp LC(C)  &trans                &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp KP_N5  &trans
-                                         &trans &trans &trans       &kp ENTER &kp KP_N0 &mo BT
+   &kp LGUI &kp HOME    &trans   &trans   &kp LC(C)  &kp LS(LC(V))         &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp KP_N5  &trans
+                                              &trans &trans &trans       &kp ENTER &kp KP_N0 &mo BT
                         >;
                 };
 
