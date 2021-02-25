@@ -75,14 +75,14 @@
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |    |  !  |  @  | F4  |LC(W)|LC(B)|                                | "|" | C(F)| C(U)|  {  |  }  |      |
+// |    |  !  |  @  | F4  |LC(W)|LC(B)|                                | "|" | C(F)| C(U)|  {  |  :  |      |
 // |    |  "  | CTL | ALT | TAB | ESC |                                | LFT | DWN | UP  | RGT |  ~  |      |
-// |    |HOME | GUI |     |LC(C)| SCV |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      | // TODO: Fix this row when &mkp is committed
+// |    |HOME | GUI |     |LC(C)| SCV |                                | NP4 | NP2 |  <  |  >  |  ?  |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | SHIFT | MOD | BT |
                         bindings = <
-   &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp RBRC   &trans
+   &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp COLON  &trans
    &trans  &kp LS(SQT) &sk LCTRL &sk LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C        &kp 0x5A  &kp 0x60  &kp 0x5E         &kp KP_N5  &trans
+   &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C        &kp 0x5A  &kp LT    &kp GT           &kp QMARK  &trans
                                               &trans &trans &trans       &sk RSHFT &mo MOD &mo BT
                         >;
                 };
