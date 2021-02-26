@@ -53,7 +53,7 @@
 //            | LCTRL | LEFT,BSPC | SHFT |          | ENTER | RIGHT,SPACE  | ALT |
                         bindings = <
    &trans    &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
-   &trans    &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &sk RALT
+   &trans    &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans    &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog MCR
                      &kp BSPC &kp LSHFT &sk LCTRL    &mt RALT ENTER &lt RSIDE SPACE &mo LSIDE
                         >;
@@ -66,9 +66,9 @@
 // |      | HOME| GUI |     | DEL |     |                                       |     |     |     |     | END |     |
 //                          | BT |    |     |                          | ENT |     | lower_layer |
                         bindings = <
-   &trans    &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &trans
-   &to QWER  &kp SQT   &kp GRAVE  &kp LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &trans                &trans     &trans         &trans     &trans    &kp END   &trans
+   &trans    &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                &kp N6          &kp N7         &kp N8     &kp N9           &kp N0    &trans
+   &to QWER  &kp SQT   &kp GRAVE  &kp LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN       &kp UP     &kp RIGHT_ARROW  &kp TILDE  &trans
+   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &trans                &trans          &trans         &trans     &trans           &kp END   &trans
                                          &mo BT &trans &mo MOD         &trans &trans &trans
                         >;
                 };
@@ -80,10 +80,10 @@
 // |    |HOME | GUI |     |LC(C)| SCV |                                | NP4 | NP2 |  <  |  >  |  ?  |      | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | MOD |     | BT |
                         bindings = <
-   &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp COLON  &trans
-   &trans  &kp LS(SQT) &sk LCTRL &sk LALT &trans    &kp ESC               &kp BSLH   &kp MINUS      &kp EQUAL  &kp LBKT  &kp RBKT  &trans
-   &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C        &kp 0x5A  &kp LT    &kp GT           &kp QMARK  &trans
-                                              &trans &trans &trans       &mo MOD &trans &mo BT
+   &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE   &kp LC(F)  &kp LC(U) &kp LBRC  &kp COLON  &trans
+   &trans  &kp LS(SQT) &sk LCTRL &sk LALT &trans    &kp ESC               &kp BSLH   &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT   &trans
+   &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C   &kp 0x5A   &kp LT    &kp GT    &kp QMARK  &trans
+                                              &trans &trans &trans       &mo MOD &trans &trans
                         >;
                 };
 
