@@ -67,7 +67,7 @@
 //                          | BT |    | BSPC |                          | ENT |     | lower_layer |
                         bindings = <
    &trans    &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &trans
-   &to QWER  &kp SQT   &kp GRAVE  &kp LALT &kp TAB   &kp ESC               &kp BSLH   &kp MINUS      &kp EQUAL  &kp LBKT  &kp RBKT  &trans
+   &to QWER  &kp SQT   &kp GRAVE  &kp LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
    &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &trans                &trans     &trans         &trans     &trans    &kp END   &trans
                                          &mo BT &mo MOD &kp BSPC         &trans &trans &trans
                         >;
@@ -81,7 +81,7 @@
 //                              |    |   |    |                   | SHIFT | MOD | BT |
                         bindings = <
    &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE        &kp LC(F) &kp LC(U) &kp LBRC         &kp COLON  &trans
-   &trans  &kp LS(SQT) &sk LCTRL &sk LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
+   &trans  &kp LS(SQT) &sk LCTRL &sk LALT &kp TAB   &kp ESC               &kp BSLH   &kp MINUS      &kp EQUAL  &kp LBKT  &kp RBKT  &trans
    &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C        &kp 0x5A  &kp LT    &kp GT           &kp QMARK  &trans
                                               &trans &trans &trans       &sk RSHFT &mo MOD &mo BT
                         >;
