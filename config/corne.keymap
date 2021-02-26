@@ -53,9 +53,9 @@
 //            | LCTRL | LEFT,BSPC | SHFT |          | ENTER | RIGHT,SPACE  | ALT |
                         bindings = <
    &trans    &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
-   &sk LCTRL &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &sk RALT
+   &trans    &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &sk RALT
    &trans    &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog MCR
-                     &kp BSPC &kp LSHFT &mo LSIDE    &mo RSIDE &kp SPACE &kp ENTER
+                     &kp BSPC &kp LSHFT &sk LCTRL    &mt RALT ENTER &lt RSIDE SPACE &trans
                         >;
                 };
 
