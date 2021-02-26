@@ -64,12 +64,12 @@
 // |      |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  |     |
 // | QWER |  '  |  `  | LALT| TAB | ESC |                                       |  \  |  -  |  =  |  [  |  ]  |     |
 // |      | HOME| GUI |     | DEL |     |                                       |     |     |     |     | END |     |
-//                          | BT |    | BSPC |                          | ENT |     | lower_layer |
+//                          | BT |    |     |                          | ENT |     | lower_layer |
                         bindings = <
    &trans    &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &trans
    &to QWER  &kp SQT   &kp GRAVE  &kp LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
    &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &trans                &trans     &trans         &trans     &trans    &kp END   &trans
-                                         &mo BT &mo MOD &kp BSPC         &trans &trans &trans
+                                         &mo BT &mo MOD &trans         &trans &trans &trans
                         >;
                 };
 
