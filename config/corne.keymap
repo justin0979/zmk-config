@@ -55,7 +55,7 @@
    &trans    &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &trans    &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
    &trans    &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog MCR
-               &mo LSIDE &sk LSHFT &mt LCTRL BSPC    &mt RALT ENTER &lt RSIDE SPACE &mo MOD
+               &mo LSIDE &kp LSHFT &mt LCTRL BSPC    &mt RALT ENTER &lt RSIDE SPACE &mo MOD
                         >;
                 };
 
@@ -82,7 +82,7 @@
                         bindings = <
    &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE   &kp LC(F)  &kp LC(U) &kp LBRC  &kp COLON  &trans
    &trans  &kp LS(SQT) &sk LCTRL &sk LALT &trans    &kp ESC               &kp BSLH   &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT   &trans
-   &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C   &kp 0x5A   &kp LT    &kp GT    &kp QMARK  &trans
+   &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp 0x5C   &kp 0x5A   &kp 0x60  &kp 0x5E  &kp KP_N5  &trans
                                               &trans &trans &trans       &trans &kp RSHFT &mo BT
                         >;
                 };
