@@ -67,7 +67,7 @@
    &trans    AS(Q) AS(D)  AS(R)  AS(W)  AS(B)           AS(J) AS(F)   AS(U)      AS(P)   AS(SEMI)  &trans
    &trans    AS(A) AS(S)  AS(H)  AS(T)  AS(G)           AS(Y) AS(N)   AS(E)      AS(O)   AS(I)     &trans
    &trans    AS(Z) AS(X)  AS(M)  AS(C)  AS(V)           AS(K) AS(L)   AS(COMMA)  AS(DOT) AS(FSLH)  &tog MCR
-                    &mo LSIDE &kp BSPC &sk LCTRL     &mt RALT ENTER &lt RSIDE SPACE &kp RSHFT
+                    &kp LSHFT &kp BSPC &sk LCTRL     &mt RALT ENTER &lt RSIDE SPACE &mo LSIDE
                         >;
                 };
 
