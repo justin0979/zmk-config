@@ -10,7 +10,7 @@
 #define BT      5
 #define QWER    6
 
-#define &as keycode &as LS(keycode) keycode
+#define AS keycode &as LS(keycode) keycode
 
 &lt {
   tapping-term-ms = <145>;
