@@ -64,9 +64,9 @@
 // |     | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | MCR |
 //            | LCTRL | LEFT,BSPC | SHFT |          | ENTER | RIGHT,SPACE  | ALT |
                         bindings = <
-   &trans    &as Q &as D  &as R  &as W  &as B           &as J &as F   &as U      &as P   &as SEMI  &trans
-   &trans    &as A &as S  &as H  &as T  &as G           &as Y &as N   &as E      &as O   &as I     &trans
-   &trans    &as Z &as X  &as M  &as C  &as V           &as K &as L   &as COMMA  &as DOT &as FSLH  &tog MCR
+   &trans    AS Q AS D  AS R  AS W  AS B           AS J AS F   AS U      AS P   AS SEMI  &trans
+   &trans    AS A AS S  AS H  AS T  AS G           AS Y AS N   AS E      AS O   AS I     &trans
+   &trans    AS Z AS X  AS M  AS C  AS V           AS K AS L   AS COMMA  AS DOT AS FSLH  &tog MCR
                &mo LSIDE &kp LSHFT &mt LCTRL BSPC    &mt RALT ENTER &lt RSIDE SPACE &mo MOD
                         >;
                 };
