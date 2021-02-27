@@ -13,7 +13,7 @@
 #define AS(keycode) &as LS(keycode) keycode
 
 &lt {
-  tapping-term-ms = <145>;
+  tapping-term-ms = <140>;
   flavor = "balanced";
 };
 
@@ -37,7 +37,7 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "AUTO_SHIFT";
                         #binding-cells = <2>;
-                        tapping_term_ms = <145>;
+                        tapping_term_ms = <135>;
                         quick_tap_ms = <0>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
@@ -67,7 +67,7 @@
    &trans    AS(Q) AS(D)  AS(R)  AS(W)  AS(B)           AS(J) AS(F)   AS(U)      AS(P)   AS(SEMI)  &trans
    &trans    AS(A) AS(S)  AS(H)  AS(T)  AS(G)           AS(Y) AS(N)   AS(E)      AS(O)   AS(I)     &trans
    &trans    AS(Z) AS(X)  AS(M)  AS(C)  AS(V)           AS(K) AS(L)   AS(COMMA)  AS(DOT) AS(FSLH)  &tog MCR
-                    &mo LSIDE &kp BSPC &sk LCTRL     &mt RALT ENTER &lt RSIDE SPACE &mo MOD
+                    &mo LSIDE &kp BSPC &sk LCTRL     &mt RALT ENTER &lt RSIDE SPACE &kp RSHFT
                         >;
                 };
 
@@ -81,7 +81,7 @@
    &trans    AS(N1)    AS(N2)     AS(N3)   AS(N4)    AS(N5)                AS(N6)    AS(N7)     AS(N8)    AS(N9)    AS(N0)    &trans
    &to QWER  AS(SQT)   AS(GRAVE)  &kp LALT &kp TAB   &kp ESC               AS(BSLH)  AS(MINUS)  AS(EQUAL) AS(LBKT)  AS(RBKT)  &trans
    &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &trans                &trans    &trans     &trans    &trans    &kp END   &trans
-                                         &mo BT &sk LSHFT &kp BSPC         &trans &trans &trans
+                                      &mo BT &sk LSHFT &kp BSPC         &trans &trans &trans
                         >;
                 };
 
