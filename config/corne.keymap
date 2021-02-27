@@ -37,7 +37,7 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "AUTO_SHIFT";
                         #binding-cells = <2>;
-                        tapping_term_ms = <140>;
+                        tapping_term_ms = <145>;
                         quick_tap_ms = <0>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
@@ -64,10 +64,10 @@
 // |     | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | MCR |
 //            | LCTRL | LEFT,BSPC | SHFT |          | ENTER | RIGHT,SPACE  | ALT |
                         bindings = <
-   &trans    AS(Q) AS(D)  AS(R)  AS(W)  AS(B)           AS(J) AS(F)   AS(U)      AS(P)   AS(SEMI)  &trans
-   &trans    AS(A) AS(S)  AS(H)  AS(T)  AS(G)           AS(Y) AS(N)   AS(E)      AS(O)   AS(I)     &trans
-   &trans    AS(Z) AS(X)  AS(M)  AS(C)  AS(V)           AS(K) AS(L)   AS(COMMA)  AS(DOT) AS(FSLH)  &tog MCR
-                    &kp LSHFT &kp BSPC &sk LCTRL     &mt RALT ENTER &lt RSIDE SPACE &mo LSIDE
+   &trans    &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
+   &trans    &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
+   &trans    &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog MCR
+              &mo LSIDE &kp LSHFT &mt LCTRL BSPC     &mt RALT ENTER &lt RSIDE SPACE &mo MOD
                         >;
                 };
 
