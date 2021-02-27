@@ -10,6 +10,8 @@
 #define BT      5
 #define QWER    6
 
+#define &as keycode &as LS(keycode) keycode
+
 &lt {
   tapping-term-ms = <145>;
   flavor = "balanced";
@@ -62,9 +64,9 @@
 // |     | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | MCR |
 //            | LCTRL | LEFT,BSPC | SHFT |          | ENTER | RIGHT,SPACE  | ALT |
                         bindings = <
-   &trans    &as LS(Q) Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
-   &trans    &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &trans
-   &trans    &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog MCR
+   &trans    &as Q &as D  &as R  &as W  &as B           &as J &as F   &as U      &as P   &as SEMI  &trans
+   &trans    &as A &as S  &as H  &as T  &as G           &as Y &as N   &as E      &as O   &as I     &trans
+   &trans    &as Z &as X  &as M  &as C  &as V           &as K &as L   &as COMMA  &as DOT &as FSLH  &tog MCR
                &mo LSIDE &kp LSHFT &mt LCTRL BSPC    &mt RALT ENTER &lt RSIDE SPACE &mo MOD
                         >;
                 };
