@@ -79,7 +79,7 @@
 //                          | BT |    |     |                          | ENT |     | lower_layer |
                         bindings = <
    &trans    AS(N1)    AS(N2)     AS(N3)   AS(N4)    AS(N5)                AS(N6)    AS(N7)     AS(N8)    AS(N9)    AS(N0)    &trans
-   &to QWER  &kp SQT   &kp GRAVE  &kp LALT &kp TAB   &kp ESC               &kp BSLH  &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT  &trans
+   &to QWER  AS(SQT)   AS(GRAVE)  &kp LALT &kp TAB   &kp ESC               AS(BSLH)  AS(MINUS)  AS(EQUAL) AS(LBKT)  AS(RBKT)  &trans
    &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &trans                &trans    &trans     &trans    &trans    &kp END   &trans
                                          &mo BT &trans &kp BSPC         &trans &trans &trans
                         >;
