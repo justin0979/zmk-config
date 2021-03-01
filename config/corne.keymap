@@ -75,12 +75,12 @@
 // -----------------------------------------------------------------------------------------
 // |      |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  |     |
 // | QWER |  '  |  `  | LALT| TAB | ESC |                                       |  \  |  -  |  =  |  [  |  ]  |     |
-// |      | HOME| GUI |     | DEL |     |                                       |     |     |     |     | END |     |
+// |      | HOME| GUI |     | DEL | CTL |                                       |     |     |     |     | END |     |
 //                          | BT |    |     |                          | ENT |     | lower_layer |
                         bindings = <
    &trans    AS(N1)    AS(N2)     AS(N3)   AS(N4)    AS(N5)                AS(N6)    AS(N7)     AS(N8)    AS(N9)    AS(N0)    &trans
    &to QWER  AS(SQT)   AS(GRAVE)  &kp LALT &kp TAB   &kp ESC               AS(BSLH)  AS(MINUS)  AS(EQUAL) AS(LBKT)  AS(RBKT)  &trans
-   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &trans                &trans    &trans     &trans    &trans    &kp END   &trans
+   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans    &trans     &trans    &trans    &kp END   &trans
                                       &mo BT &sk LSHFT &kp BSPC         &trans &trans &trans
                         >;
                 };
