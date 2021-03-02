@@ -74,13 +74,13 @@
                 right_layer {
 // -----------------------------------------------------------------------------------------
 // |      |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  |     |
-// | QWER |  '  |  `  | LALT| TAB | ESC |                                       |  \  |  -  |  =  |  [  |  ]  |     |
+// | QWER |  '  |  `  | LALT| TAB | ESC |                                       | LFT | DWN | UP  | RGT |  ~  |     |
 // |      | HOME| GUI |     | DEL | CTL |                                       |     |     |     |     | END |     |
 //                          | BT |    |     |                          | ENT |     | lower_layer |
                         bindings = <
-   &trans    AS(N1)    AS(N2)     AS(N3)   AS(N4)    AS(N5)                AS(N6)    AS(N7)     AS(N8)    AS(N9)    AS(N0)    &trans
-   &to QWER  AS(SQT)   AS(GRAVE)  &kp LALT &kp TAB   &kp ESC               AS(BSLH)  AS(MINUS)  AS(EQUAL) AS(LBKT)  AS(RBKT)  &trans
-   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans    &trans     &trans    &trans    &kp END   &trans
+   &trans    AS(N1)    AS(N2)     AS(N3)   AS(N4)    AS(N5)                AS(N6)          AS(N7)     AS(N8)    AS(N9)           AS(N0)     &trans
+   &to QWER  AS(SQT)   AS(GRAVE)  &kp LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN   &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
+   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans          &trans     &trans    &trans           &kp END    &trans
                                       &mo BT &sk LSHFT &kp BSPC         &trans &trans &trans
                         >;
                 };
@@ -88,12 +88,12 @@
                 left_layer {
 // -----------------------------------------------------------------------------------------
 // |    |  !  |  @  | F4  |LC(W)|LC(B)|                                | "|" | C(F)| C(U)|  {  |  :  |     |
-// |    |  "  | CTL | ALT |     | ESC |                                | LFT | DWN | UP  | RGT |  ~  |     |
+// |    |  "  | CTL | ALT |     | ESC |                                |  \  |  -  |  =  |  [  |  ]  |     |
 // |    |HOME | GUI |     |LC(C)| SCV |                                |  \  |  -  |  =  |  [  |  ]  |     | // TODO: Fix this row when &mkp is committed
 //                              |    |   |    |                   | MOD |     | BT |
                         bindings = <
    &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W) &kp LC(B)             &kp PIPE        &kp LC(F)  &kp LC(U) &kp LBRC         &kp COLON  &trans
-   &trans  &kp LS(SQT) &sk LCTRL &sk LALT &trans    &kp ESC               &kp LEFT_ARROW  &kp DOWN   &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
+   &trans  &kp LS(SQT) &sk LCTRL &sk LALT &trans    &kp ESC               &kp BSLH        &kp MINUS  &kp EQUAL &kp LBKT         &kp RBKT   &trans
    &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C) &kp LS(LC(V))         &kp BSLH        &kp MINUS  &kp EQUAL &kp LBKT         &kp RBKT   &trans
                                               &trans &trans &trans       &trans &kp RSHFT &mo BT
                         >;
@@ -117,12 +117,12 @@
 // -----------------------------------------------------------------------------------------
 // |  F  |  9  |  Q  |  W  |  E  |  1  |                                |  ^  |  &  |  *  |  (  |  )  | END  |
 // |  F5 |  8  |  A  |  S  |  D  |  2  |                                | LFT | DWN |  UP | RGT |     |      |
-// |     |  7  |  6  |  5  |  4  |  3  |                                |     |     |     |     |     | MCR  | // TODO: Fix this row when &mkp is committed
+// |     |  7  |  6  |  5  |  4  |  3  |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      |
 //               | CTRL  | SPACE  | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
-   &kp F     &kp N9   &kp Q    &kp W     &kp E     &kp N1                     &kp CARET       &kp AMPERSAND  &kp STAR  &kp LPAR         &kp RPAR &kp END
-   &kp F5    &kp N8   &kp A    &kp S     &kp D     &kp N2                     &kp LEFT_ARROW  &kp DOWN       &kp UP    &kp RIGHT_ARROW  &trans   &trans
-   &trans    &kp N7   &kp N6   &kp N5    &kp N4    &kp N3                     &trans          &trans         &trans    &trans           &trans   &tog MCR
+   &kp F     &kp N9   &kp Q    &kp W     &kp E     &kp N1                     &kp CARET       &kp AMPERSAND  &kp STAR  &kp LPAR         &kp RPAR  &kp END
+   &kp F5    &kp N8   &kp A    &kp S     &kp D     &kp N2                     &kp LEFT_ARROW  &kp DOWN       &kp UP    &kp RIGHT_ARROW  &trans    &trans
+   &trans    &kp N7   &kp N6   &kp N5    &kp N4    &kp N3                     &kp 0x5C        &kp 0x5A       &kp 0x60  &kp 0x5E         &kp KP_N5 &trans
                                     &kp LCTRL  &kp SPACE &kp LSHFT       &trans &trans &trans
                         >;
                 };
