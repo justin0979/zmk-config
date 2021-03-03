@@ -102,13 +102,13 @@
                 mod_layer {
 // -----------------------------------------------------------------------------------------
 // |    |  !  |  @  |  #  |  $  |  %  |                                |  ^  |  &  |  *  |  (  |  )  |     |
-// |    |  "  |  ~  | LALT| TAB | ESC |                                | '|' |  _  |  +  |  {  |  }  |     |
-// |    |HOME | GUI |     | DEL | SCV |                                |  \  |  -  |  =  |  [  |  ]  |     |
+// |    |  "  |  ~  | LALT| TAB | ESC |                                |  \  |  -  |  =  |  [  |  ]  |     |
+// |    |HOME | GUI |     | DEL | SCV |                                | '|' |  _  |  +  |  {  |  }  |     |
 //                              |    |   |    |                   |       |      | BT |
                         bindings = <
    &trans  &kp EXCL    &kp AT          &kp HASH &kp DLLR  &kp PRCNT             &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans
-   &trans  &kp LS(SQT) &kp LS(GRAVE)   &kp LALT  &kp TAB  &kp ESC               &kp PIPE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &trans
-   &trans  &kp HOME    &kp LGUI        &trans   &kp DEL   &kp LS(LC(V))         &kp BSLH   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &trans
+   &trans  &kp LS(SQT) &kp LS(GRAVE)   &kp LALT  &kp TAB  &kp ESC               &kp BSLH   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &trans
+   &trans  &kp HOME    &kp LGUI        &trans   &kp DEL   &kp LS(LC(V))         &kp PIPE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &trans
                                                    &mo BT  &trans &trans       &trans &trans &trans
                         >;
                 };
