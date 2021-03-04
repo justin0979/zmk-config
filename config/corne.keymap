@@ -25,6 +25,11 @@
                     key-positions = <38 40>;
                     bindings = <&kp BSPC>;
                 };
+                combo_enter {
+                    timeout-ms = <50>;
+                    key-positions = <38 39>;
+                    bindings = <&kp ENTER>;
+                };
                 combo_minus {
                   timeout-ms = <50>;
                   key-positions = <19 39>;
@@ -81,7 +86,7 @@
    &trans    AS(N1)    AS(N2)     AS(N3)   AS(N4)    AS(N5)                AS(N6)          AS(N7)     AS(N8)    AS(N9)           AS(N0)     &trans
    &to QWER  AS(SQT)   AS(GRAVE)  &kp LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN   &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
    &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans          &trans     &trans    &trans           &kp END    &trans
-                                      &mo BT &sk LSHFT &kp BSPC         &kp ENTER &trans &trans
+                                      &mo BT &sk LSHFT &kp BSPC         &trans &trans &trans
                         >;
                 };
 
@@ -95,7 +100,7 @@
    &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)  &kp STAR  &kp LPAR  &kp RPAR  &trans
    &trans  &kp LS(SQT) &kp LCTRL &kp LALT &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &trans
    &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &trans
-                                                  &trans &trans &trans       &sk RSHFT &trans &mo BT
+                                                  &trans &trans &trans       &kp ENTER &trans &mo BT
                         >;
                 };
 
