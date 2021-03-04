@@ -36,7 +36,7 @@
                     key-positions = <37 39>;
                     bindings = <&kp ENTER>;
                 };
-                combo_enter {
+                combo_enter_2 {
                     timeout-ms = <50>;
                     key-positions = <38 40>;
                     bindings = <&kp ENTER>;
