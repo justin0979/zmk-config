@@ -76,27 +76,27 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |     | Q |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  |     |
-// |  '  | A |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  |  "  |
-// | ENT | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | MCR |
+// | ENT | A |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  | ENT |
+// | MCR | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | QWER|
 //            | LCTRL | LEFT,BSPC | SHFT |          | ENTER | RIGHT,SPACE  | ALT |
                         bindings = <
    &trans    &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
-   &kp SQT   &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &kp LS(SQT)
-   &kp ENTER &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &tog MCR
+   &kp ENTER &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &kp ENTER
+   &tog MCR  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &to QWER
                     &sl LSIDE &kp LSHFT &mo LSIDE     &mo RSIDE &kp SPACE &sl MOD
                         >;
                 };
 
                 right_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  |     |
-// |      |  '  |  `  | LALT| TAB | ESC |                                       | LFT | DWN | UP  | RGT |  ~  |     |
-// | QWER | HOME| GUI |     | DEL | CTL |                                       |     |     |     |     | END |     |
+// |    |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  |     |
+// |    |  '  |  `  | LALT| TAB | ESC |                                       | LFT | DWN | UP  | RGT |  ~  |     |
+// |    | HOME| GUI |     | DEL | CTL |                                       |     |     |     |     | END |     |
 //                          | BT |       | BSPC |                          | ENT |     | lower_layer |
                         bindings = <
    &trans    &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                &kp N6          &kp N7     &kp N8    &kp N9           &kp N0     &trans
    &trans    AS(SQT)   AS(GRAVE)  &sk LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN   &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &to QWER  &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans          &trans     &trans    &trans           &kp END    &trans
+   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans          &trans     &trans    &trans           &kp END    &trans
                                           &mo BT &trans &kp BSPC         &trans &trans &trans
                         >;
                 };
@@ -161,11 +161,11 @@
 // -----------------------------------------------------------------------------------------
 // |   `  |  Q  |  W  |  E  |  R  |  T  |              |  Y  |  U   |  I  |  O  |  P  | DEL |
 // |  '   |  A  |  S  |  D  |  F  |  G  |              |  H  |  J   |  K  |  L  |  ;  |  "  |
-// | tog  |  Z  |  X  |  C  |  V  |  B  |              |  N  |  M   |  ,  |  .  |  /  | MCR |
+// | tog  |  Z  |  X  |  C  |  V  |  B  |              |  N  |  M   |  ,  |  .  |  /  | SHFT|
 //                  | LEFT | SHIFT | CTL,TAB |   | ALT,ENT | SPACE  | RIGHT |
                         bindings = <
    &kp GRAVE  &kp Q &kp W &kp E &kp R &kp T              &kp Y &kp U  &kp I     &kp O   &kp P     &kp DEL
-   &trans     &kp 4 &kp S &kp D &kp F &kp G              &kp H &kp J  &kp K     &kp L   &kp SCLN  &trans
+   &kp SQT    &kp 4 &kp S &kp D &kp F &kp G              &kp H &kp J  &kp K     &kp L   &kp SCLN  &kp LS(SQT)
    &to 0      &kp Z &kp X &kp C &kp V &kp B              &kp N &kp M  &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
                             &trans &trans &trans     &trans &trans &trans
                         >;
