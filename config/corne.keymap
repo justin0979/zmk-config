@@ -94,10 +94,10 @@
 // |      | HOME| GUI |     | DEL | CTL |                                       |     |     |     |     | END |     |
 //                          | BT |       | BSPC |                          | ENT |     | lower_layer |
                         bindings = <
-   &trans    AS(N1)    AS(N2)     AS(N3)   AS(N4)    AS(N5)                AS(N6)          AS(N7)     AS(N8)    AS(N9)           AS(N0)     &trans
+   &trans    &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                &kp N6          &kp N7     &kp N8    &kp N9           &kp N0     &trans
    &to QWER  AS(SQT)   AS(GRAVE)  &sk LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN   &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
    &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans          &trans     &trans    &trans           &kp END    &trans
-                                      &mo BT &trans &kp BSPC         &trans &trans &trans
+                                          &mo BT &trans &kp BSPC         &trans &trans &trans
                         >;
                 };
 
@@ -166,8 +166,8 @@
                         bindings = <
    &kp GRAVE  &kp Q &kp W &kp E &kp R &kp T              &kp Y &kp U  &kp I     &kp O   &kp P     &kp DEL
    &to 0      &kp 4 &kp S &kp D &kp F &kp G              &kp H &kp J  &kp K     &kp L   &kp SCLN  &kp SQT
-   &kp TAB    &kp Z &kp X &kp C &kp V &kp B              &kp N &kp M  &kp COMMA &kp DOT &kp FSLH  &tog MCR
-                            &trans &trans &trans     &trans &trans &trans
+   &kp LSHFT  &kp Z &kp X &kp C &kp V &kp B              &kp N &kp M  &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
+                            &trans &trans &kp BSPC    &kp ENTER &trans &trans
                         >;
                 };
         };
