@@ -47,9 +47,9 @@
                   bindings = <&kp MINUS>;
                 };
                 combo_single_quote {
-                  timeout-ms = <50>;
+                  timeout-ms = <75>;
                   key-positions = <39 13>;
-                  bindings = <&kp SQT>
+                  bindings = <&kp SQT>;
                 };
         };
  
