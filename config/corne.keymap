@@ -137,13 +137,13 @@
                 minecraft_layer {
 // -----------------------------------------------------------------------------------------
 // |  F  |  9  |  Q  |  W  |  E  |  1  |                                |  ^  |  &  |  *  |  (  |  )  | END  |
-// |  F5 |  8  |  A  |  S  |  D  |  2  |                                | LFT | DWN |  UP | RGT |     |      |
-// |     |  7  |  6  |  5  |  4  |  3  |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      |
+// |  F5 |  8  |  A  |  S  |  D  |  2  |                                | NP4 | NP2 | NP8 | NP6 | NP5 |      |
+// |     |  7  |  6  |  5  |  4  |  3  |                                | LFT | DWN |  UP | RGT |     |      |
 //               | CTRL  | SPACE  | SHFT |                   | ENT |     | lower_layer |
                         bindings = <
    &kp F     &kp N9   &kp Q    &kp W     &kp E     &kp N1                     &kp CARET       &kp AMPERSAND  &kp STAR  &kp LPAR         &kp RPAR  &kp END
-   &kp F5    &kp N8   &kp A    &kp S     &kp D     &kp N2                     &kp LEFT_ARROW  &kp DOWN       &kp UP    &kp RIGHT_ARROW  &trans    &trans
-   &trans    &kp N7   &kp N6   &kp N5    &kp N4    &kp N3                     &kp 0x5C        &kp 0x5A       &kp 0x60  &kp 0x5E         &kp KP_N5 &trans
+   &kp F5    &kp N8   &kp A    &kp S     &kp D     &kp N2                     &kp 0x5C        &kp 0x5A       &kp 0x60  &kp 0x5E         &kp KP_N5 &trans
+   &trans    &kp N7   &kp N6   &kp N5    &kp N4    &kp N3                     &kp LEFT_ARROW  &kp DOWN       &kp UP    &kp RIGHT_ARROW  &trans    &trans
                                     &kp LCTRL  &kp SPACE &kp LSHFT       &trans &trans &trans
                         >;
                 };
