@@ -13,7 +13,7 @@
 #define AS(keycode) &as LS(keycode) keycode
 
 &lt {
-  tapping-term-ms = <135>;
+  tapping-term-ms = <139>;
   flavor = "balanced";
 };
 
