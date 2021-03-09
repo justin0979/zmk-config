@@ -26,21 +26,6 @@
 
         combos {
                 compatible = "zmk,combos";
-                combo_enter {
-                    timeout-ms = <50>;
-                    key-positions = <37 39>;
-                    bindings = <&kp ENTER>;
-                };
-                combo_enter_2 {
-                    timeout-ms = <50>;
-                    key-positions = <38 40>;
-                    bindings = <&kp ENTER>;
-                };
-                combo_enter_3 {
-                    timeout-ms = <50>;
-                    key-positions = <37 40>;
-                    bindings = <&kp ENTER>;
-                };
                 combo_minus {
                   timeout-ms = <50>;
                   key-positions = <19 39>;
@@ -88,7 +73,7 @@
    &trans    &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &trans
    &kp SQT   &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &kp ENTER
    &tog MCR  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &to QWER
-                    &kp BSPC &kp LSHFT &mo LSIDE     &lt RSIDE ENTER &kp SPACE &sl MOD
+                    &kp BSPC &kp LSHFT &mo LSIDE     &kp ENTER &lt RSIDE SPACE &sl MOD
                         >;
                 };
 
