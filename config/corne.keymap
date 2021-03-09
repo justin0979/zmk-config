@@ -65,15 +65,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |     | Q |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  |     |
-// |  '  | A |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  | ENT |
+// |     | Q |  D  |  R  |  W  |  B  |                  |  J  |  F   |  U  |  P  |  ;  |ENTER|
+// |  '  | A |  S  |  H  |  T  |  G  |                  |  Y  |  N   |  E  |  O  |  I  | BSPC|
 // | MCR | Z |  X  |  M  |  C  |  V  |                  |  K  |  L   |  ,  |  .  |  /  | QWER|
-//                  | BPSC | SHFT | LEFT |          | RIGHT | SPACE  | MOD |
+//                  | ENTER | SHFT | LEFT |          | RIGHT | SPACE  | MOD |
                         bindings = <
    &trans    &kp Q &kp D  &kp R  &kp W  &kp B           &kp J &kp F   &kp U      &kp P   &kp SEMI  &kp ENTER
    &kp SQT   &kp A &kp S  &kp H  &kp T  &kp G           &kp Y &kp N   &kp E      &kp O   &kp I     &kp BSPC
    &tog MCR  &kp Z &kp X  &kp M  &kp C  &kp V           &kp K &kp L   &kp COMMA  &kp DOT &kp FSLH  &to QWER
-                    &kp BSPC &kp LSHFT &mo LSIDE     &mo RSIDE &kp SPACE &sl MOD
+                    &kp ENTER &kp LSHFT &mo LSIDE     &mo RSIDE &kp SPACE &sl MOD
                         >;
                 };
 
