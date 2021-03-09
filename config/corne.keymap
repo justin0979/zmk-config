@@ -46,10 +46,10 @@
                   key-positions = <19 39>;
                   bindings = <&kp MINUS>;
                 };
-                combo_single_quote {
+                combo_back_tick {
                   timeout-ms = <75>;
                   key-positions = <39 13>;
-                  bindings = <&kp SQT>;
+                  bindings = <&kp GRAVE>;
                 };
         };
  
@@ -95,14 +95,14 @@
                 right_layer {
 // -----------------------------------------------------------------------------------------
 // |    |  1  |  2  |  3  |  4  |  5  |                                       |  6  |  7  |  8  |  9  |  0  |     |
-// |    |  '  |  `  | LALT| TAB | ESC |                                       | LFT | DWN | UP  | RGT |  ~  |     |
+// |    |  `  |  ~  | LALT| TAB | ESC |                                       | LFT | DWN | UP  | RGT |  ~  |     |
 // |    | HOME| GUI |     | DEL | CTL |                                       |     |     |     |     | END |     |
 //                          | BT |       | BSPC |                          | ENT |     | lower_layer |
                         bindings = <
-   &trans    &kp N1    &kp N2     &kp N3   &kp N4    &kp N5                &kp N6          &kp N7     &kp N8    &kp N9           &kp N0     &trans
-   &trans    AS(SQT)   AS(GRAVE)  &sk LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN   &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
-   &trans    &kp HOME  &kp LGUI   &trans   &kp DEL   &sk LCTRL             &trans          &trans     &trans    &trans           &kp END    &trans
-                                       &mo BT &sk LSHFT &kp BSPC         &trans &trans &trans
+   &trans    &kp N1    &kp N2         &kp N3   &kp N4    &kp N5                &kp N6          &kp N7     &kp N8    &kp N9           &kp N0     &trans
+   &trans    AS(GRAVE) &kp LS(GRAVE)  &sk LALT &kp TAB   &kp ESC               &kp LEFT_ARROW  &kp DOWN   &kp UP    &kp RIGHT_ARROW  &kp TILDE  &trans
+   &trans    &kp HOME  &kp LGUI       &trans   &kp DEL   &sk LCTRL             &trans          &trans     &trans    &trans           &kp END    &trans
+                                           &mo BT &sk LSHFT &kp BSPC         &trans &trans &trans
                         >;
                 };
 
