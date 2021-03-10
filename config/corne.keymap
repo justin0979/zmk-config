@@ -99,9 +99,9 @@
 // |    |HOME | GUI |     |LC(C)| SCV |                                | '|' |  _  |  +  |  {  |  }  |     |
 //                              |    |   |    |                   | BSPC |       | BT |
                         bindings = <
-   &trans  &kp EXCL    &kp AT    &kp F4   &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)  &kp LC(U)  &kp LPAR  &kp RPAR  &trans
-   &trans  &kp TILDE   &kp LCTRL &kp LALT &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp MINUS &kp EQUAL   &kp LBKT  &kp RBKT  &trans
-   &trans  &kp HOME    &kp LGUI  &trans   &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER &kp PLUS    &kp LBRC  &kp RBRC  &trans
+   &trans  &kp EXCL     &kp AT    &kp F4   &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)  &kp LC(U)  &kp LPAR  &kp RPAR  &trans
+   &trans  &kp LS(SQT)  &kp TILDE &kp LALT &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp MINUS &kp EQUAL   &kp LBKT  &kp RBKT  &trans
+   &trans  &kp HOME     &kp LGUI  &trans   &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER &kp PLUS    &kp LBRC  &kp RBRC  &trans
                                                   &trans &trans &trans       &kp BSPC &trans &mo BT
                         >;
                 };
