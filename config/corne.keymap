@@ -25,19 +25,14 @@
 // | 24  | 25|  26 |  27 |  28 |  29 |                  |  30 |  31  |  32 |  33 |  34 | 35  |
 //                        | 36 | 37 | 38 |          | 39 | 40 | 41 |
 
-        combos {
-                compatible = "zmk,combos";
-                combo_minus {
-                  timeout-ms = <50>;
-                  key-positions = <19 39>;
-                  bindings = <&kp MINUS>;
-                };
-                combo_back_tick {
-                  timeout-ms = <75>;
-                  key-positions = <39 13>;
-                  bindings = <&kp GRAVE>;
-                };
-        };
+        //combos {
+        //        compatible = "zmk,combos";
+        //        combo_minus {
+        //          timeout-ms = <50>;
+        //          key-positions = <19 39>;
+        //          bindings = <&kp MINUS>;
+        //        };
+        //};
  
         behaviors {
                 as: auto_shift {
@@ -94,14 +89,14 @@
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |    |  !  |  @  | F4  |LC(W)|LC(B)|                                |  ^  |LC(F)|LC(U)|  (  |  )  |     |
+// |    |  !  |  @  |LC(R)|LC(W)|LC(B)|                                |  ^  |LC(F)|LC(U)|  (  |  )  |     |
 // |    |  `  |  ~  | ALT | CAT | ESC |                                |  \  |  -  |  =  |  [  |  ]  |     |
 // |    |HOME | GUI |     |LC(C)| SCV |                                | '|' |  _  |  +  |  {  |  }  |     |
 //                              |    |   |    |                   | BSPC |       | BT |
                         bindings = <
-   &trans  &kp EXCL   &kp AT    &kp F4   &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)  &kp LC(U)  &kp LPAR  &kp RPAR  &trans
-   &trans  &kp GRAVE  &kp TILDE &kp LALT &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp MINUS &kp EQUAL   &kp LBKT  &kp RBKT  &trans
-   &trans  &kp HOME   &kp LGUI  &trans   &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER &kp PLUS    &kp LBRC  &kp RBRC  &trans
+   &trans  &kp EXCL   &kp AT    &kp LC(R) &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)  &kp LC(U)  &kp LPAR  &kp RPAR  &trans
+   &trans  &kp GRAVE  &kp TILDE &kp LALT  &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp MINUS &kp EQUAL   &kp LBKT  &kp RBKT  &trans
+   &trans  &kp HOME   &kp LGUI  &trans    &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER &kp PLUS    &kp LBRC  &kp RBRC  &trans
                                                   &trans &trans &trans       &kp BSPC &trans &mo BT
                         >;
                 };
