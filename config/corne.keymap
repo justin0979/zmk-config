@@ -95,7 +95,7 @@
 //                              |    |   |    |                   | BSPC |       | BT |
                         bindings = <
    &trans  &kp EXCL   &kp AT    &kp LC(R) &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)     &kp LC(U)   &kp LPAR  &kp RPAR       &trans
-   &trans  &kp GRAVE  &kp TILDE &kp LALT  &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp LC(LS(N)) &kp EQUAL   &kp trans &kp LC(LS(I))  &trans
+   &trans  &kp GRAVE  &kp TILDE &kp LALT  &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp LC(LS(N)) &kp EQUAL   & trans   &kp LC(LS(I))  &trans
    &trans  &kp HOME   &kp LGUI  &trans    &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER     &kp PLUS    &kp LBRC  &kp RBRC       &trans
                                                   &trans &trans &trans       &kp BSPC &trans &mo BT
                         >;
