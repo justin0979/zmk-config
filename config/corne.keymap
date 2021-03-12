@@ -89,14 +89,14 @@
 
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |    |  !  |  @  |LC(R)|LC(W)|LC(B)|                                |  ^  |LC(F)|LC(U)|  (  |  )  |     |
-// |    |  `  |  ~  | ALT | CAT | ESC |                                |  \  |CS(N)|  =  |CS(I)|  ]  |     |
-// |    |HOME | GUI |     |LC(C)| SCV |                                | '|' |  _  |  +  |  {  |  }  |     |
+// |    |  !  |  @  |LC(R)|LC(W)|LC(B)|                                |  ^  |LC(F)|LC(U)| ( |  )  |     |
+// |    |  `  |  ~  | ALT | CAT | ESC |                                |  \  |CS(N)|  =  | [ |CS(I)|     |
+// |    |HOME | GUI |     |LC(C)| SCV |                                | '|' |  _  |  +  | { |  }  |     |
 //                              |    |   |    |                   | BSPC |       | BT |
                         bindings = <
-   &trans  &kp EXCL   &kp AT    &kp LC(R) &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)     &kp LC(U)  &kp LPAR        &kp RPAR  &trans
-   &trans  &kp GRAVE  &kp TILDE &kp LALT  &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp LC(LS(N)) &kp EQUAL   &kp LC(LS(I))  &kp RBKT  &trans
-   &trans  &kp HOME   &kp LGUI  &trans    &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER     &kp PLUS    &kp LBRC       &kp RBRC  &trans
+   &trans  &kp EXCL   &kp AT    &kp LC(R) &kp LC(W)     &kp LC(B)             &kp CARET  &kp LC(F)     &kp LC(U)   &kp LPAR  &kp RPAR       &trans
+   &trans  &kp GRAVE  &kp TILDE &kp LALT  &kp LC(LA(T)) &kp ESC               &kp BSLH   &kp LC(LS(N)) &kp EQUAL   &kp trans &kp LC(LS(I))  &trans
+   &trans  &kp HOME   &kp LGUI  &trans    &kp LC(C)     &kp LS(LC(V))         &kp PIPE   &kp UNDER     &kp PLUS    &kp LBRC  &kp RBRC       &trans
                                                   &trans &trans &trans       &kp BSPC &trans &mo BT
                         >;
                 };
